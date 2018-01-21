@@ -18,10 +18,10 @@
         <li  class="main-nav__item">
           <a  class="main-nav__link" href="#">Вязание на заказ</a>
         </li>
-        <li  class="main-nav__item  site-list__item--search">
+        <li  class="main-nav__item  main-nav__item--search">
           <a  class="main-nav__link" href="#">Поиск по сайту</a>
         </li>
-        <li  class="main-nav__item  site-list__item--basket">
+        <li  class="main-nav__item  main-nav__item--basket">
           <a  class="main-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
@@ -30,6 +30,7 @@
   </header>
   <main  class="page-main">
     <section  class="order">
+      <h2  class="visually-hidden">Форма заказа</h2>
       <div  class="order__definition">
         <p>
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -86,20 +87,16 @@
           </label>
         </fieldset>
         <fieldset  class="form__fieldset">
-          <span  class="form__title">тел</span>
           <label  class="field-text">
+            <span  class="field-text__title">тел</span>
             <input  class="field-tel__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХ ХХ*" required>
           </label>
-        </fieldset>
-        <fieldset  class="form__fieldset">
-          <span  class="form__title">E-mail</span>
           <label  class="field-text">
+            <span  class="field-text__title">E-mail</span>
             <input  class="field-email__input" type="email" name="email" placeholder="Ваш Email*" required>
           </label>
-        </fieldset>
-        <fieldset  class="form__fieldset">
-          <span  class="form__title">Доп</span>
           <label  class="field-text">
+            <span  class="field-text__title">Доп</span>
             <textarea  class="field-text__input" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
           </label>
         </fieldset>
@@ -114,13 +111,13 @@
     <div  class="page-footer__inner">
       <ul  class="social-list">
         <li  class="social-list__item">
-          <a  class="social-list__link"  href="">В инстаграме</a>
+          <a  class="social-list__link"  href="#">В инстаграме</a>
         </li>
         <li  class="social-list__item">
-          <a  class="social-list__link"  href="">В контакте</a>
+          <a  class="social-list__link"  href="#">В контакте</a>
         </li>
         <li  class="social-list__item">
-          <a  class="social-list__link"  href="">В твиттере</a>
+          <a  class="social-list__link"  href="#">В твиттере</a>
         </li>
       </ul>
       <div  class="page-footer__copyright">
