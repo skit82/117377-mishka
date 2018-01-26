@@ -1,0 +1,35 @@
+.reviews__title {
+  margin: 0px;
+  margin-bottom: 30px;
+  font-size: $font-size + 10;
+  line-height: 30px;
+  font-weight: bold;
+  color: $color-black;
+}
+.reviews {
+  &__item {
+    margin: 0px;
+  }
+  &__item p {
+    margin: 0px;
+    margin-bottom: 35px;
+    line-height: 30px;
+  }
+}
+.reviews__name {
+  font-size: $font-size + 2;
+  font-weight: bold;
+  color: $color-black;
+  margin-bottom: 20px;
+}
+.reviews__link {
+  font-size: $font-size +3;
+  line-height: 20px;
+  font-weight: bold;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.slider {
+  margin-bottom: 40px;
+}

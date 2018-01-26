@@ -1,0 +1,18 @@
+.contacts {
+  &__title {
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: $font-size + 3;
+    line-height: 30px;
+    font-weight: bold;
+    color: $color-black;
+  }
+}
+.contacts__link {
+  font-size: $font-size +3;
+  line-height: 20px;
+  font-weight: bold;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
