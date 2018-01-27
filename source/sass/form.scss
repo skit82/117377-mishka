@@ -1,47 +1,50 @@
 .form {
+
   &__legend {
     margin: 0px;
     padding: 0px;
-    font-size: $font-size +2;
+    font-size: $font-size--middle;
     line-height: 16px;
     font-weight: bold;
-    color: #62d1ba;
+    color: $text-aqua;
     text-transform: uppercase;
   }
 }
 .field-radio__name {
-  font-size: $font-size + 2;
+  font-size: $font-size--middle;
   line-height: 18px;
   font-weight: bold;
   color: $color-black;
 }
 .field-checkbox__name {
-  font-size: $font-size +2;
+  font-size: $font-size--middle;
   line-height: 18px;
   font-weight: bold;
   color: $color-black;
 }
 .field-text {
+
   &__name {
-    font-size: $font-size + 2;
+    font-size: $font-size--middle;
     line-height: 18px;
     font-weight: bold;
     color: $color-black;
   }
+
   &__title {
-    font-size: $font-size +2;
+    font-size: $font-size--middle;
     line-height: 16px;
     font-weight: bold;
-    color: #62d1ba;
+    color: $text-aqua;
     text-transform: uppercase;
   }
 }
 .form__completion {
-  font-size: $font-size -1;
+  font-size: $font-size--h3;
   line-height: 16px;
 }
 .form__submit {
-  font-size: $font-size +2;
+  font-size: $font-size--middle;
   line-height: 16px;
   font-weight: bold;
   color: $color-black;

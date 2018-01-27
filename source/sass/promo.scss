@@ -8,40 +8,44 @@
   padding: 0px;
   list-style: none;
 }
-.promo__title {
-  font-size: $font-size + 12;
-  font-family: $font-family;
-  font-weight: bold;
-  line-height: 30px;
-  text-align: center;
-  color: $color-black;
-}
-.promo__title {
-  width: 243px;
+.promo {
+
+  &__title {
+    font-size: $font-size--md;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color: $color-black;
+  }
+
+  &__title {
   margin: 0px;
   padding-top: 77px;
   padding-bottom: 122px;
+  }
 }
 .promo {
+
   &__decor {
   width: auto;
   height: 103px;
   margin: 0px;
-}
+  }
 }
 .promo__decor {
+
   &--item {
     height: 103px;
     background-color: rgb(99, 209, 187);
-}
+  }
+
   &--toy {
     height: 103px;
     background-color: rgb(86, 195, 178);
   }
 }
-
 .promo__decor a {
-  font-size: $font-size + 4;
+  font-size: $font-size--h4;
   line-height: 24px;
   font-weight: bold;
   color: #ffffff;

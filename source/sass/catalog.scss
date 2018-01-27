@@ -1,18 +1,19 @@
 .catalog {
+
   &__title {
   margin: 0px;
   margin-bottom: 30px;
-  font-size: $font-size + 12;
+  font-size: $font-size--md;
   line-height: 30px;
   font-weight: bold;
   color: $color-black;
   }
+
   &__title {
     height: 177px;
     background-color: rgb(241, 241, 241);
   }
-}
-.catalog {
+
   &__list {
     margin: 0px;
     padding: 0px;

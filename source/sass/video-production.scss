@@ -3,25 +3,27 @@
   border: 1px solid #ececec;
 }
 .video-production {
+
   &__title {
     margin: 0px;
-    font-size: $font-size + 2;
+    font-size: $font-size--middle;
     line-height: 24px;
     font-weight: bold;
     color: $color-black;
     text-align: center;
   }
+
   &__description p {
     margin: 0px;
-    font-size: $font-size - 2;
+    font-size: $font-size--h5;
     line-height: 24px;
   }
 }
 .video-production__link {
-  font-size: $font-size + 2;
+  font-size: $font-size--middle;
   line-height: 16px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  color: #444444;
+  color: $text-dark;
 }
