@@ -1,21 +1,25 @@
 .order {
 
   &__title {
-  margin: 0px;
-  margin-bottom: 30px;
-  font-size: $font-size--md;
-  line-height: 30px;
-  font-weight: bold;
-  color: $color-black;
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: $font-size--md;
+    line-height: $font-size--md + 3;
+    font-weight: bold;
+    color: $color-black;
   }
 
   &__title {
     min-height: 177px;
-    background-color: rgb(241, 241, 241);
+    background-color: $bg-color;
   }
-}
-.order__definition p {
-  margin: 0px;
-  font-size: $font-size--middle;
-  line-height: 24px;
+
+  &__definition {
+
+    & p {
+      margin: 0px;
+      font-size: $font-size--middle;
+      line-height: $font-size--middle + 7;
+    }
+  }
 }

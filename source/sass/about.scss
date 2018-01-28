@@ -1,15 +1,16 @@
 .about {
   margin-bottom: 58px;
 }
-.about__title {
-  margin: 0px;
-  margin-bottom: 30px;
-  font-size: $font-size--sl;
-  line-height: 30px;
-  font-weight: bold;
-  color: $color-black;
-}
 .about {
+
+  &__title {
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: $font-size--sl;
+    line-height: $font-size--sl + 5;
+    font-weight: bold;
+    color: $color-black;
+  }
 
   &__list {
     margin: 0px;
@@ -19,7 +20,7 @@
 
   &__item {
     font-size: $font-size--middle;
-    line-height: 20px;
+    line-height: $font-size--middle + 3;
     font-weight: bold;
     color: $color-black;
   }

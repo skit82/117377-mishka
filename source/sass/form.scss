@@ -4,50 +4,23 @@
     margin: 0px;
     padding: 0px;
     font-size: $font-size--middle;
-    line-height: 16px;
+    line-height: $font-size--middle - 1;
     font-weight: bold;
     color: $text-aqua;
     text-transform: uppercase;
   }
-}
-.field-radio__name {
-  font-size: $font-size--middle;
-  line-height: 18px;
-  font-weight: bold;
-  color: $color-black;
-}
-.field-checkbox__name {
-  font-size: $font-size--middle;
-  line-height: 18px;
-  font-weight: bold;
-  color: $color-black;
-}
-.field-text {
 
-  &__name {
+  &__completion {
+    font-size: $font-size--h3;
+    line-height: $font-size--h3 + 2;
+  }
+
+  &__submit {
     font-size: $font-size--middle;
-    line-height: 18px;
+    line-height: $font-size--middle - 1;
     font-weight: bold;
     color: $color-black;
-  }
-
-  &__title {
-    font-size: $font-size--middle;
-    line-height: 16px;
-    font-weight: bold;
-    color: $text-aqua;
     text-transform: uppercase;
+    text-decoration: none;
   }
-}
-.form__completion {
-  font-size: $font-size--h3;
-  line-height: 16px;
-}
-.form__submit {
-  font-size: $font-size--middle;
-  line-height: 16px;
-  font-weight: bold;
-  color: $color-black;
-  text-transform: uppercase;
-  text-decoration: none;
 }

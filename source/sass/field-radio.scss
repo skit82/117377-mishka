@@ -1,0 +1,9 @@
+.field-radio {
+
+  &__name {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle + 1;
+    font-weight: bold;
+    color: $color-black;
+  }
+}

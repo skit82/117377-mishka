@@ -3,52 +3,56 @@
   background-repeat: no-repeat;
   margin-bottom: 35px;
 }
-.promo ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
 .promo {
+
+  & ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
 
   &__title {
     font-size: $font-size--md;
     font-weight: bold;
-    line-height: 30px;
+    line-height: $font-size--md + 3;
     text-align: center;
     color: $color-black;
   }
 
   &__title {
-  margin: 0px;
-  padding-top: 77px;
-  padding-bottom: 122px;
+    margin: 0px;
+    padding-top: 77px;
+    padding-bottom: 122px;
   }
-}
-.promo {
 
   &__decor {
-  width: auto;
-  height: 103px;
-  margin: 0px;
-  }
-}
-.promo__decor {
-
-  &--item {
+    width: auto;
     height: 103px;
-    background-color: rgb(99, 209, 187);
+    margin: 0px;
   }
 
-  &--toy {
-    height: 103px;
-    background-color: rgb(86, 195, 178);
+  &__decor {
+
+    &--item {
+      height: 103px;
+      background-color: rgb(99, 209, 187);
+    }
+
+    &--toy {
+      height: 103px;
+      background-color: rgb(86, 195, 178);
+    }
   }
-}
-.promo__decor a {
-  font-size: $font-size--h4;
-  line-height: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
+
+  &__decor {
+
+    & a {
+      font-size: $font-size--h4;
+      line-height: $font-size--h4 + 5;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
 }
 

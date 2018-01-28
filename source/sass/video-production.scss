@@ -7,7 +7,7 @@
   &__title {
     margin: 0px;
     font-size: $font-size--middle;
-    line-height: 24px;
+    line-height: $font-size--middle + 7;
     font-weight: bold;
     color: $color-black;
     text-align: center;
@@ -16,14 +16,15 @@
   &__description p {
     margin: 0px;
     font-size: $font-size--h5;
-    line-height: 24px;
+    line-height: $font-size--h5 + 11;
   }
-}
-.video-production__link {
-  font-size: $font-size--middle;
-  line-height: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $text-dark;
+
+  &__link {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle - 1;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text-dark;
+  }
 }

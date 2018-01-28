@@ -4,7 +4,7 @@
     margin: 0px;
     margin-bottom: 22px;
     font-size: $font-size--middle;
-    line-height: 24px;
+    line-height: $font-size--middle + 7;
     font-weight: bold;
     color: $color-black;
   }
@@ -23,7 +23,7 @@
   }
 
   &__price {
-    line-height: 24px;
+    line-height: $font-size + 9;
     font-weight: bold;
     color: $color-black;
   }
