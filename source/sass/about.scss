@@ -1,7 +1,8 @@
 .about {
-  margin-bottom: 58px;
-}
-.about {
+
+  & {
+    margin-bottom: 58px;
+  }
 
   &__title {
     margin: 0px;

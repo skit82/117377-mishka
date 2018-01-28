@@ -1,11 +1,12 @@
 .promo {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  margin-bottom: 35px;
-}
-.promo {
 
-  & ul {
+  & {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+  }
+
+  ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -46,7 +47,7 @@
 
   &__decor {
 
-    & a {
+    a {
       font-size: $font-size--h4;
       line-height: $font-size--h4 + 5;
       font-weight: bold;
