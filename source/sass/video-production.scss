@@ -1,0 +1,34 @@
+.video-production {
+
+  & {
+    width: 258px;
+    border: 1px solid #ececec;
+  }
+
+  &__title {
+    margin: 0px;
+    font-size: $font-size--middle;
+    line-height: $font-size--middle + 7;
+    font-weight: bold;
+    color: $color-black;
+    text-align: center;
+  }
+
+  &__description {
+
+    p {
+      margin: 0px;
+      font-size: $font-size--h5;
+      line-height: $font-size--h5 + 11;
+    }
+  }
+
+  &__link {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle - 1;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text-dark;
+  }
+}

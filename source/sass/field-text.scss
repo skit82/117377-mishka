@@ -1,0 +1,17 @@
+.field-text {
+
+  &__name {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle + 1;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &__title {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle - 1;
+    font-weight: bold;
+    color: $text-aqua;
+    text-transform: uppercase;
+  }
+}

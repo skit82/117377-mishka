@@ -1,0 +1,16 @@
+.main-nav {
+
+  &__list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  &__list a {
+    font-size: $font-size--middle;
+    color: $color-black;
+    font-weight: bold;
+    line-height: $font-size--middle + 7;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,30 @@
+.flashcard {
+
+  &__title {
+    margin: 0px;
+    margin-bottom: 22px;
+    font-size: $font-size--middle;
+    line-height: $font-size--middle + 7;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &__image {
+    margin-bottom: 28px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__text {
+    margin-bottom: 58px;
+    font-size: $font-size--middle;
+  }
+
+  &__price {
+    line-height: $font-size + 9;
+    font-weight: bold;
+    color: $color-black;
+  }
+}

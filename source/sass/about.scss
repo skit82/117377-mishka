@@ -1,0 +1,28 @@
+.about {
+
+  & {
+    margin-bottom: 58px;
+  }
+
+  &__title {
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: $font-size--sl;
+    line-height: $font-size--sl + 5;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &__list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  &__item {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle + 3;
+    font-weight: bold;
+    color: $color-black;
+  }
+}

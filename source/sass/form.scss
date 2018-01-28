@@ -1,0 +1,26 @@
+.form {
+
+  &__legend {
+    margin: 0px;
+    padding: 0px;
+    font-size: $font-size--middle;
+    line-height: $font-size--middle - 1;
+    font-weight: bold;
+    color: $text-aqua;
+    text-transform: uppercase;
+  }
+
+  &__completion {
+    font-size: $font-size--h3;
+    line-height: $font-size--h3 + 2;
+  }
+
+  &__submit {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle - 1;
+    font-weight: bold;
+    color: $color-black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
