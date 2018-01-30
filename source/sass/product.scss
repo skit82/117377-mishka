@@ -20,12 +20,16 @@
   }
 
   &__description {
-    margin: 0px;
-    margin-bottom: 28px;
-    line-height: $font-size + 9;
+
+    p {
+      margin: 0px;
+      margin-bottom: 28px;
+      line-height: $font-size + 9;
+    }
   }
 
   &__properties {
+    width: 260px;
     margin-bottom: 28px;
     border-collapse: collapse;
   }
@@ -65,5 +69,19 @@
     color: $text-dark;
     text-transform: uppercase;
     text-decoration: none;
+  }
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+@media (min-width: $screen-md) {
+
+  .product {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 }
