@@ -73,7 +73,7 @@
 }
 .product {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -81,7 +81,10 @@
 
   .product {
     display: flex;
+    align-items: start;
+    justify-content: center;
     margin: 0 auto;
     padding: 0 50px;
   }
 }
+
