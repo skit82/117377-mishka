@@ -38,3 +38,15 @@
     text-transform: uppercase;
   }
 }
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding: 0 30px;
+}
+.slider__nav {
+  display: flex;
+  margin-top: 36px;
+  margin-bottom: 38px;
+}
