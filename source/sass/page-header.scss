@@ -9,8 +9,16 @@
 
 @media (min-width: $screen-md) {
   .page-header {
+
     min-height: 89px;
     margin: 0px;
     padding: 0 50px;
+
+    &__inner {
+      position: absolute;
+      height: 130px;
+      display: flex;
+      flex-basis: 668px;
+    }
   }
 }

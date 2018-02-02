@@ -8,10 +8,11 @@
 </head>
 <body>
   <header  class="page-header">
+    <div class="page-header__inner">
     <nav  class="main-nav">
-      <a  class="main-nav__logo">
-        <img  class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-      </a>
+    <a  class="main-nav__logo">
+      <img  class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+    </a>
       <button  class="main-nav__toggle" type="button"><span></span>Открыть меню</button>
       <ul  class="main-nav__list">
         <li  class="main-nav__item">
@@ -20,22 +21,34 @@
         <li  class="main-nav__item">
           <a  class="main-nav__link" href="form.html">Вязание на заказ</a>
         </li>
-        <li  class="main-nav__item  main-nav__item--search">
-          <a  class="main-nav-list__link" href="#">Поиск по сайту</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Новые поступления</a>
         </li>
-        <li  class="main-nav__item  main-nav__item--basket">
-          <a  class="main-navt__link" href="#">Корзина: пока пуста</a>
+        <li class="main-nav-item">
+          <a class="main-nav__link" href="">Распродажа</a>
         </li>
       </ul>
+      <ul class="main-nav__user">
+        <li  class="main-nav__item  main-nav__item--search">
+          <a  class="main-nav__link" href="#">Поиск по сайту</a>
+        </li>
+        <li  class="main-nav__item  main-nav__item--basket">
+          <a  class="main-nav__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    <span class="main-nav__item">Бесплатная доставка по России</span>
     </nav>
+    </div>
   </header>
   <main  class="page-main">
     <div  class="promo">
-      <h1  class="promo__title">Милые штуки ручной</br>  работы для дома</h1>
+      <div class="promo__inner">
+      <h1  class="promo__title">Милые штуки ручной  работы&nbsp;для&nbsp;дома</h1>
       <ul>
         <li  class="promo__decor promo__decor--item"><a class="promo__link" href="#">Предметы  интерьера</a></li>
         <li  class="promo__decor promo__decor--toy"><a class="promo__link" href="#">Детские  игрушки</a></li>
       </ul>
+    </div>
     </div>
     <section  class="product">
       <div class="product__text">
@@ -118,9 +131,11 @@
         <dt  class="contacts__list-key">e-mail:</dt>
         <dd  class="contacts__list-value"><a  class="contacts__list-link" href="">nfo@mimimishkashop.ru</a></dd>
         <dt  class="contacts__list-key">адрес:</dt>
-        <dd  class="contacts__list-value"> г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+        <dd  class="contacts__list-value">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
       </dl>
-      <div  class="map"></div>
+      <div  class="map">
+        <script async defer src="https://goo.gl/maps/tUBxGMgaiNy"></script>
+      </div>
       <a  class="contacts__link  button" href="#">Напишите нам</a>
     </section>
   </main>

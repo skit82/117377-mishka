@@ -50,3 +50,46 @@
   margin-top: 36px;
   margin-bottom: 38px;
 }
+
+@media (min-width: $screen-md) {
+
+  .reviews {
+    display: flex;
+    position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    padding-top: 75px;
+    padding-bottom: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__item {
+      p {
+        width: 642px;
+        margin-bottom: 70px;
+      }
+    }
+
+    &__name {
+      margin-bottom: 18px;
+    }
+
+    &__link {
+      position: absolute;
+      display: block;
+      right: 51px;
+      top: 55px;
+      width: 176px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+      border: 1px solid #000000;
+    }
+  }
+}

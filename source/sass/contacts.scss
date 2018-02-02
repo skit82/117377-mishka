@@ -20,7 +20,24 @@
 }
 
 .contacts {
-  display: flex;
-  flex-direction: column;
+
+  width: 260px;
+  margin: 0 auto;
   padding: 0 30px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  &__list-key {
+    flex-grow: 1;
+  }
+
+  &__list-value {
+    width: 178px;
+    margin-left: auto
+  }
 }
+
