@@ -11,14 +11,23 @@
   .page-header {
 
     min-height: 89px;
+    width: 668px;
     margin: 0px;
     padding: 0 50px;
 
     &__inner {
-      position: absolute;
       height: 130px;
       display: flex;
-      flex-basis: 668px;
     }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .page-header {
+    min-height: 89px;
+    width: 1050px;
+    padding: 0px;
+    margin: 0 auto;
   }
 }

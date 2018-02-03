@@ -88,6 +88,7 @@
   .product {
 
     display: flex;
+    width: 668px;
     align-items: start;
     margin: 0 auto;
     padding: 0 50px;
@@ -166,6 +167,57 @@
       padding-bottom: 14px;
       text-align: center;
       border: 1px solid #000;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .product {
+    display: flex;
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0px;
+
+    &__text {
+      display: flex;
+      width: 655px;
+      flex-shrink: 1;
+      flex-grow: 0;
+      margin: 0px;
+      margin-left: 47px;
+      margin-bottom: 54px;
+      padding-top: 64px;
+    }
+
+    &__title {
+      order: 2;
+    }
+
+    &__hit {
+      order: 1;
+      margin-right: 57px;
+    }
+
+    &__inner {
+      position: static;
+      margin-left: 175px;
+    }
+
+    &__picture {
+      position: absolute;
+    }
+
+    &__description {
+
+      p {
+        margin-bottom: 64px;
+      }
+    }
+
+    &__properties {
+      margin-bottom: 112px;
     }
   }
 }
