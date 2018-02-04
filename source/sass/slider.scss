@@ -1,4 +1,26 @@
 .slider {
+
   margin-bottom: 40px;
+
+  &__nav {
+    position: static;
+    display: flex;
+    margin-top: 36px;
+    margin-bottom: 38px;
+  }
 }
 
+@media (min-width: $screen-md) {
+
+  .slider {
+
+    position: relative;
+
+    &__nav {
+      position: absolute;
+      bottom: 20px;
+      right: 0px;
+      margin: 0px;
+    }
+  }
+}

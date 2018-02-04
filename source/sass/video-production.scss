@@ -1,9 +1,8 @@
 .video-production {
 
-  & {
-    width: 258px;
-    border: 1px solid #ececec;
-  }
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
 
   &__title {
     margin: 0px;
@@ -11,24 +10,136 @@
     line-height: $font-size--middle + 7;
     font-weight: bold;
     color: $color-black;
-    text-align: center;
+    text-align: left;
   }
 
   &__description {
 
     p {
       margin: 0px;
+      margin-bottom: 30px;
+      padding-left: 36px;
+      padding-right: 39px;
       font-size: $font-size--h5;
       line-height: $font-size--h5 + 11;
     }
   }
 
   &__link {
+    width: 186px;
+    align-self: center;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    margin-bottom: 34px;
     font-size: $font-size--middle;
     line-height: $font-size--middle - 1;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
     text-transform: uppercase;
     color: $text-dark;
+    border: 1px solid #000000;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 259px;
+    border: 1px solid #ececec;
+  }
+
+  &__title {
+    width: 170px;
+    padding-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+  }
+
+  &__image {
+    width: 260px;
+    height: 150px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .video-production {
+
+    width: 668px;
+    margin: 0 auto;
+    padding: 0px;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      width: 668px;
+    }
+
+    &__image {
+      order: 1;
+    }
+
+    &__title {
+      order: 2;
+    }
+
+    &__description {
+
+      order: 3;
+
+      p {
+        padding-left: 42px;
+        padding-right: 42px;
+        font-size: $font-size;
+        line-height: $font-size + 15;
+      }
+    }
+
+    &__link {
+      order: 4;
+      width: 582px;
+      margin-left: 43px;
+      margin-right: 43px;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .video-production {
+
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+
+    &__inner {
+      display: flex;
+      align-items: flex-end;
+      width: 1050px;
+    }
+
+    &__image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 683px;
+    }
+
+    &__title {
+      padding-right: 60px;
+    }
+
+    &__description {
+
+      p {
+        width: 223px;
+      }
+    }
+
+    &__link {
+      width: 230px;
+      align-self: flex-end;
+    }
   }
 }
