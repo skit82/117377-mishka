@@ -1,5 +1,9 @@
 .field-text {
 
+  display: flex;
+  flex-direction: column;
+   align-items: flex-start;
+
   &__name {
     font-size: $font-size--middle;
     line-height: $font-size--middle + 1;
@@ -13,5 +17,22 @@
     font-weight: bold;
     color: $text-aqua;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .field-text {
+
+    display: flex;
+    flex-direction: row;
+
+    &__name {
+      margin-right: 26px;
+    }
+
+    &__item {
+      width: 100%;
+    }
   }
 }

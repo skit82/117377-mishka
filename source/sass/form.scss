@@ -1,5 +1,9 @@
 .form {
 
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+
   &__legend {
     margin: 0px;
     padding: 0px;
@@ -10,17 +14,57 @@
     text-transform: uppercase;
   }
 
+  &__fieldset {
+    border: none;
+  }
+
+  &__legend {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
   &__completion {
     font-size: $font-size--h3;
     line-height: $font-size--h3 + 2;
   }
 
   &__submit {
+    display: block;
+    width: 258px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: $font-size--middle;
     line-height: $font-size--middle - 1;
     font-weight: bold;
     color: $color-black;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    border: 1px solid #000000;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .form {
+
+    width: 668px;
+    margin: 0 auto;
+    padding: 0px;
+
+    &__inner {
+      display: flex;
+    }
+
+    &__legend {
+      width: 167px;
+      align-items: flex-start;
+    }
+
+    &__inner--item {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

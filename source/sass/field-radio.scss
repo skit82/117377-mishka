@@ -1,9 +1,23 @@
 .field-radio {
 
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
   &__name {
     font-size: $font-size--middle;
     line-height: $font-size--middle + 1;
     font-weight: bold;
     color: $color-black;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .field-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 501px;
   }
 }
