@@ -71,7 +71,6 @@
 }
 
 @media (min-width: $screen-md) {
-
   .promo {
 
     ul {
@@ -81,10 +80,6 @@
 
     &__decor {
       width: 50%;
-    }
-
-    &__decor--toy,
-    &__decor--item {
       height: 119px;
     }
 

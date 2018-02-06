@@ -1,5 +1,7 @@
 .about {
 
+  margin-bottom: 58px;
+
   &__title {
     margin: 0px;
     margin-bottom: 30px;
@@ -21,23 +23,22 @@
     font-weight: bold;
     color: $color-black;
   }
-}
 
-.about {
-  margin-bottom: 58px;
-}
-.about__inner {
-  width: 260px;
-  margin: 0 auto;
-}
-.about__list {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
-.about__item {
-  width: 100%;
+  &__inner {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 100%;
+  }
 }
 
 @media (min-width: $screen-md) {
