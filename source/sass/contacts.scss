@@ -21,14 +21,23 @@
 
 .contacts {
 
-  width: 260px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   margin: 0 auto;
-  padding: 0 30px;
+  margin-bottom: 40px;
+
+  &__title {
+    align-items: flex-start;
+    padding: 0 30px;
+  }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
+    margin-bottom: 42px;
+    padding: 0 30px;
   }
 
   &__list-key {
@@ -38,6 +47,113 @@
   &__list-value {
     width: 178px;
     margin-left: auto
+  }
+
+  &__map {
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    display: block;
+    width: 258px;
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    text-align: center;
+    border: 1px solid #000000;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .contacts {
+
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+    padding: 0px;
+
+    &__title {
+      order: 1;
+      padding: 0px;
+    }
+
+    &__list {
+      order: 2;
+      margin-bottom: 62px;
+      padding: 0px;
+    }
+
+    &__list-key {
+      flex-grow: 0;
+      margin-right: 25px;
+    }
+
+    &__list-value {
+      margin-right: auto;
+      margin-right: 37px;
+      flex-grow: 1;
+    }
+
+    &__map {
+      order: 3;
+    }
+
+    &__link {
+      order: 4;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .contacts {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 106px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 297px;
+      margin-left: 175px;
+      margin-bottom: 84px;
+    }
+
+    &__title {
+      margin-left: 175px;
+      margin-bottom: 62px;
+      padding-top: 62px;
+    }
+
+    &__list-key {
+      flex-grow: 0;
+      min-height: 66px;
+      margin-right: 25px;
+    }
+
+    &__list-value {
+      margin: 0px;
+      flex-grow: 0;
+    }
+
+    &__map {
+      order: 4;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &__link {
+      width: 228px;
+      margin: 0px;
+      margin-left: 175px;
+    }
   }
 }
 
