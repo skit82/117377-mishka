@@ -1,26 +1,24 @@
 .order {
-
-  width: 320px;
-  margin: 0 auto ;
+  width: auto;
+  margin: 0 auto;
 
   &__title {
     margin: 0px;
     margin-bottom: 30px;
+    padding-top: 77px;
+    padding-bottom: 82px;
     font-size: $font-size--md;
     line-height: $font-size--md + 3;
     font-weight: bold;
-    text-align: center;
     color: $color-black;
   }
 
   &__title {
-    padding-top: 77px;
-    padding-bottom: 82px;
-    background-color: $bg-color;
+    text-align: center;
+    background-color: #f1f1f1;
   }
 
   &__definition {
-
     width: 260px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -40,8 +38,6 @@
   .order {
     display: flex;
     flex-direction: column;
-    width: auto;
-    min-width: 768px;
     margin: 0 auto;
 
     &__title {
@@ -52,7 +48,6 @@
     }
 
     &__definition {
-
       align-items: flex-start;
       width: 668px;
       margin: 0 auto;
@@ -64,6 +59,24 @@
         line-height: $font-size--middle + 13;
         text-align: left;
       }
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .order {
+
+    &__title {
+      padding-top: 106px;
+      padding-bottom: 95px;
+      font-size: $font-size--md + 26;
+      line-height: $font-size--md + 30;
+    }
+
+    &__definition {
+      width: 700px;
+      align-self: center;
     }
   }
 }

@@ -1,4 +1,8 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding: 0 30px;
 
   &__title {
     margin: 0px;
@@ -38,13 +42,6 @@
     text-decoration: none;
     text-transform: uppercase;
   }
-}
-
-.reviews {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  padding: 0 30px;
 }
 
 @media (min-width: $screen-md) {

@@ -1,5 +1,4 @@
 .promo {
-
   display: flex;
   flex-direction: column;
   min-height: 373px;
@@ -71,6 +70,7 @@
 }
 
 @media (min-width: $screen-md) {
+
   .promo {
 
     ul {
@@ -86,6 +86,16 @@
     &__link {
       font-size: $font-size--h4 + 1;
       line-height: $font-size--h4 + 11;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .promo {
+
+    &__inner {
+
     }
   }
 }

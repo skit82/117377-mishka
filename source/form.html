@@ -92,40 +92,46 @@
         <fieldset  class="form__fieldset">
           <div class="form__inner">
             <legend  class="form__legend">ФИО</legend>
-            <label  class="field-text">
-              <span class="field-text__name">Имя:</span>
-              <input  class="field-text__item" type="text" name="name" placeholder="Введите ваше имя*" required>
-            </label>
-            <label  class="field-text">
-              <span class="field-text__name">Фамилия:</span>
-              <input  class="field-text__item" type="text" name="name" placeholder="Укажите фамилию*" required>
-            </label>
-            <label  class="field-text">
-              <span class="field-text__name">Отчество:</span>
-              <input  class="field-text__item" type="text" name="name" placeholder="Отчество, если желаете">
-            </label>
+            <div class="field-text">
+              <label  class="field-text__list">
+                <span class="field-text__name">Имя:</span>
+                <input  class="field-text__item" type="text" name="name" placeholder="Введите ваше имя*" required>
+              </label>
+              <label  class="field-text__list">
+                <span class="field-text__name">Фамилия:</span>
+                <input  class="field-text__item" type="text" name="name" placeholder="Укажите фамилию*" required>
+              </label>
+              <label  class="field-text__list">
+                <span class="field-text__name">Отчество:</span>
+                <input  class="field-text__item" type="text" name="name" placeholder="Отчество, если желаете">
+              </label>
+            </div>
           </div>
         </fieldset>
         <fieldset  class="form__fieldset">
-          <div class="form__inner form__inner--item">
-            <label  class="field-text">
-              <span  class="field-text__title">тел</span>
-              <input  class="field-tel__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХ ХХ*" required>
-            </label>
-            <label  class="field-text">
-              <span  class="field-text__title">E-mail</span>
-              <input  class="field-email__input" type="email" name="email" placeholder="Ваш Email*" required>
-            </label>
-            <label  class="field-text">
-              <span  class="field-text__title">Доп</span>
-              <textarea  class="field-text__input" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
-            </label>
+          <div class="form__inner">
+            <div class="field-text field-text--block">
+              <label  class="field-text__list">
+                <span  class="field-text__title">тел</span>
+                <input  class="field-text__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХ ХХ*" required>
+              </label>
+              <label  class="field-text__list">
+                <span  class="field-text__title">E-mail</span>
+                <input  class="field-text__input" type="email" name="email" placeholder="Ваш Email*" required>
+              </label>
+              <label  class="field-text__list">
+                <span  class="field-text__title">Доп</span>
+                <textarea  class="field-text__input" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+              </label>
+            </div>
           </div>
         </fieldset>
-        <small  class="form__completion">
-          <sup>*</sup>Поля обязательны для заполнения
-        </small>
-        <a  class="form__submit  button" href="">Отправить заказ</a>
+        <div class="form__wrapper">
+          <small  class="form__completion">
+            <sup>*</sup>Поля обязательны для заполнения
+          </small>
+          <a  class="form__submit  button" href="">Отправить заказ</a>
+        </div>
       </form>
     </section>
   </main>

@@ -1,5 +1,4 @@
 .field-radio {
-
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -19,5 +18,13 @@
     flex-direction: column;
     align-items: flex-start;
     width: 501px;
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .field-radio {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -1,9 +1,9 @@
 .product {
-
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 30px;
+
   &__title {
     margin: 0px;
     margin-bottom: 14px;
@@ -87,12 +87,12 @@
 @media (min-width: $screen-md) {
 
   .product {
-
     display: flex;
     width: 668px;
     align-items: start;
     margin: 0 auto;
     padding: 0 50px;
+
     &__text {
       width: auto;
       display: flex;
@@ -174,7 +174,6 @@
 @media (min-width: $screen-xl) {
 
   .product {
-
     display: flex;
     position: relative;
     width: 1050px;

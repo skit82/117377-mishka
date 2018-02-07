@@ -1,36 +1,33 @@
 .main-nav {
-
-  &__list {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-  }
-
-  &__list a {
-    font-size: $font-size--middle;
-    color: $color-black;
-    font-weight: bold;
-    line-height: $font-size--middle + 7;
-    text-decoration: none;
-  }
-}
-.main-nav {
   position: relative;
   margin: 0 auto;
-}
-.main-nav__logo {
-  display: block;
-  text-align: center;
-  padding: 22px 0px;
-}
-.main-nav__toggle {
-  position: absolute;
-  right: 0px;
-  top: 32px;
-  width: 21px;
-  height: 21px;
-  margin-left: auto;
-  font-size: 0px;
+
+  &__list {
+
+    a {
+      font-size: $font-size--middle;
+      color: $color-black;
+      font-weight: bold;
+      line-height: $font-size--middle + 7;
+      text-decoration: none;
+    }
+  }
+
+  &__logo {
+    display: block;
+    text-align: center;
+    padding: 22px 0px;
+  }
+
+  &__toggle {
+    position: absolute;
+    right: 0px;
+    top: 32px;
+    width: 21px;
+    height: 21px;
+    margin-left: auto;
+    font-size: 0px;
+  }
 }
 
 @media (min-width: $screen-md) {
@@ -59,6 +56,9 @@
       width: 334px;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
     }
 
     &__user {
@@ -90,7 +90,6 @@
 @media (min-width: $screen-xl) {
 
   .main-nav {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

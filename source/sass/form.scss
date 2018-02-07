@@ -1,5 +1,4 @@
 .form {
-
   width: 260px;
   margin: 0 auto;
   padding: 0 30px;
@@ -16,12 +15,19 @@
 
   &__fieldset {
     border: none;
+    margin: 0px;
+    padding: 0px;
   }
 
   &__legend {
     display: flex;
     flex-direction: column;
     align-items: start;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
   }
 
   &__completion {
@@ -48,13 +54,13 @@
 @media (min-width: $screen-md) {
 
   .form {
-
     width: 668px;
     margin: 0 auto;
     padding: 0px;
 
     &__inner {
       display: flex;
+      flex-direction: row;
     }
 
     &__legend {
@@ -65,6 +71,38 @@
     &__inner--item {
       display: flex;
       flex-direction: column;
+    }
+
+    &__wrapper {
+      display: flex;
+      margin-top: 57px;
+      margin-bottom: 52px;
+    }
+
+    &__completion {
+      order: 2;
+      margin-left: auto;
+      align-self: center;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .form {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0px;
+
+    &__legend {
+      width: 175px;
+      text-align: center;
+    }
+
+    &__wrapper {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
