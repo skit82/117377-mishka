@@ -1,4 +1,6 @@
 .catalog {
+  width: auto;
+  margin: 0 auto;
 
   &__title {
     margin: 0px;
@@ -55,7 +57,7 @@
 @media (min-width: $screen-xl) {
 
   .catalog {
-    width: 1150px;
+    width: 1050px;
     margin: 0 auto;
 
     &__title {

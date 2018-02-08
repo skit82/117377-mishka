@@ -75,11 +75,15 @@
 
     ul {
       display: flex;
-      padding: 0 50px;
+    }
+
+    &__inner {
+      width: 668px;
+      align-self: center;
     }
 
     &__decor {
-      width: 50%;
+      width: 334px;
       height: 119px;
     }
 
@@ -95,7 +99,12 @@
   .promo {
 
     &__inner {
+      width: 1050px;
+      margin: 0 auto;
+    }
 
+    &__decor {
+      width: 525px;
     }
   }
 }
