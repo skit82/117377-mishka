@@ -2,7 +2,8 @@
   position: relative;
   margin: 0 auto;
 
-  &__list {
+  &__list,
+  &__user {
 
     a {
       font-size: $font-size--middle;
@@ -11,6 +12,14 @@
       line-height: $font-size--middle + 7;
       text-decoration: none;
     }
+  }
+
+  &__list,
+  &__user {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 46px;
+    list-style: none;
   }
 
   &__logo {
@@ -27,6 +36,18 @@
     height: 21px;
     margin-left: auto;
     font-size: 0px;
+  }
+
+  &__list-hit {
+    display: none;
+  }
+
+  &__delivery {
+    display: none;
+  }
+
+  &__item {
+    border-bottom: 1px solid #ececec;
   }
 }
 
