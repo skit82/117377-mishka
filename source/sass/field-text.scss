@@ -14,4 +14,57 @@
     color: $text-aqua;
     text-transform: uppercase;
   }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .field-text {
+    width: 500px;
+
+    &__name {
+      margin-right: 26px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &--block {
+      width: 668px;
+    }
+
+    &__title {
+      width: 167px;
+    }
+
+    &__input {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .field-text {
+    width: 700px;
+
+    &__title {
+      width: 175px;
+      text-align: center;
+    }
+
+    &--block {
+      width: 875px;
+    }
+  }
 }

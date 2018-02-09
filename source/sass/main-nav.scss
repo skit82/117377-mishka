@@ -1,16 +1,127 @@
 .main-nav {
+  position: relative;
+  margin: 0 auto;
 
   &__list {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+
+    a {
+      font-size: $font-size--middle;
+      color: $color-black;
+      font-weight: bold;
+      line-height: $font-size--middle + 7;
+      text-decoration: none;
+    }
   }
 
-  &__list a {
-    font-size: $font-size--middle;
-    color: $color-black;
-    font-weight: bold;
-    line-height: $font-size--middle + 7;
-    text-decoration: none;
+  &__logo {
+    display: block;
+    text-align: center;
+    padding: 22px 0px;
+  }
+
+  &__toggle {
+    position: absolute;
+    right: 0px;
+    top: 32px;
+    width: 21px;
+    height: 21px;
+    margin-left: auto;
+    font-size: 0px;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    height: 130px;
+    margin: 0px;
+
+    &__logo {
+      order: 1;
+      flex-grow: 0;
+      margin-left: 0px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      order: 3;
+      display: inline-flex;
+      width: 334px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    &__user {
+      margin: 0px;
+      padding: 0px;
+      padding-top: 36px;
+      padding-bottom: 35px;
+      list-style: none;
+      display: inline-flex;
+      order: 2;
+      flex-grow: 0px;
+      justify-content: space-between;
+      flex-basis: 334px;
+    }
+
+    &__list-hit {
+      display: none;
+    }
+
+    &__delivery{
+      display: flex;
+      order: 4;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1050px;
+
+    &__logo {
+      order: 2;
+      width: 323px;
+    }
+
+    &__list {
+      order: 1;
+      width: 377px;
+    }
+
+    &__user {
+      order: 3;
+      width: 350px;
+    }
+
+    &__list-hit {
+      display: inline-flex;
+      justify-content: space-between;
+      order: 4;
+      width: 350px;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    &__delivery {
+      order: 5;
+    }
   }
 }

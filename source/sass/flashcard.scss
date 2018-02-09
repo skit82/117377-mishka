@@ -1,8 +1,12 @@
 .flashcard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 
   &__title {
     margin: 0px;
     margin-bottom: 22px;
+    padding-top: 31px;
     font-size: $font-size--middle;
     line-height: $font-size--middle + 7;
     font-weight: bold;
@@ -10,21 +14,87 @@
   }
 
   &__image {
-    margin-bottom: 28px;
+    width: 260px;
+    height: 195px;
   }
 
   &__link {
+    display: flex;
     text-decoration: none;
   }
 
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 28px;
+    border: 1px solid #ededed;
+  }
   &__text {
-    margin-bottom: 58px;
-    font-size: $font-size--middle;
+    padding-bottom: 5px;
+    font-size: $font-size--h5;
+    line-height: $font-size--h5 + 17;
   }
 
   &__price {
+    margin-bottom: 32px;
     line-height: $font-size + 9;
     font-weight: bold;
     color: $color-black;
+  }
+
+  &__pucture {
+    width: 20px;
+    height: 19px;
+  }
+
+  &__item {
+    display: flex;
+    width: 206px;
+    margin-top: auto;
+  }
+
+  &__price {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .flashcard {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 54px;
+
+    &__image {
+      width: 334px;
+      height: 332px;
+    }
+
+    &__inner {
+      flex-grow: 1;
+      padding-left: 28px;
+    }
+
+    &__title {
+      padding: 0px;
+      padding-top: 28px;
+    }
+
+    &__price {
+      margin-top: auto;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .flashcard {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    margin: 0px;
+    margin-bottom: 57px;
   }
 }

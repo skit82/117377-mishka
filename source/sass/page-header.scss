@@ -1,0 +1,36 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+  min-height: 79px;
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $screen-md) {
+  .page-header {
+    position: relative;
+    min-height: 89px;
+    width: 668px;
+    margin: 0 auto;
+    padding: 0px;
+
+    &__inner {
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      height: 130px;
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .page-header {
+    min-height: 89px;
+    width: 1050px;
+    padding: 0px;
+    margin: 0 auto;
+  }
+}

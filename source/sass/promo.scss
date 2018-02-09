@@ -1,10 +1,13 @@
 .promo {
-
-  & {
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    margin-bottom: 35px;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 373px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin-bottom: 35px;
 
   ul {
     margin: 0px;
@@ -22,8 +25,10 @@
 
   &__title {
     margin: 0px;
-    padding-top: 77px;
-    padding-bottom: 122px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 76px;
+    padding-bottom: 136px;
   }
 
   &__decor {
@@ -45,15 +50,61 @@
     }
   }
 
-  &__decor {
+  &__link {
 
-    a {
-      font-size: $font-size--h4;
-      line-height: $font-size--h4 + 5;
-      font-weight: bold;
-      color: #ffffff;
-      text-decoration: none;
+    font-size: $font-size--h4;
+    line-height: $font-size--h4 + 5;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__link {
+
+    display: block;
+    width: auto;
+    max-width: 114px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .promo {
+
+    ul {
+      display: flex;
+    }
+
+    &__inner {
+      width: 668px;
+      align-self: center;
+    }
+
+    &__decor {
+      width: 334px;
+      height: 119px;
+    }
+
+    &__link {
+      font-size: $font-size--h4 + 1;
+      line-height: $font-size--h4 + 11;
     }
   }
 }
 
+@media (min-width: $screen-xl) {
+
+  .promo {
+
+    &__inner {
+      width: 1050px;
+      margin: 0 auto;
+    }
+
+    &__decor {
+      width: 525px;
+    }
+  }
+}
