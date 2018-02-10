@@ -21,6 +21,11 @@
     line-height: $font-size--middle + 3;
     font-weight: bold;
     color: $color-black;
+    margin-bottom: 86px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0px;
   }
 
   &__inner {

@@ -72,9 +72,15 @@
 @media (min-width: $screen-md) {
 
   .promo {
+    height: 746px;
 
     ul {
       display: flex;
+    }
+
+    &__title {
+      font-size: $font-size--md + 16;
+      line-height: $font-size--md + 23;
     }
 
     &__inner {

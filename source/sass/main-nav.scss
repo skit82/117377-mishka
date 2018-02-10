@@ -6,6 +6,10 @@
   &__user {
 
     a {
+      display: block;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      padding-left: 76px;
       font-size: $font-size--middle;
       color: $color-black;
       font-weight: bold;
@@ -18,7 +22,6 @@
   &__user {
     margin: 0px;
     padding: 0px;
-    padding-left: 46px;
     list-style: none;
   }
 
@@ -26,11 +29,12 @@
     display: block;
     text-align: center;
     padding: 22px 0px;
+    border: 1px solid #ececec;
   }
 
   &__toggle {
     position: absolute;
-    right: 0px;
+    right: 30px;
     top: 32px;
     width: 21px;
     height: 21px;
@@ -65,6 +69,7 @@
       order: 1;
       flex-grow: 0;
       margin-left: 0px;
+      border: none;
     }
 
     &__toggle {
@@ -74,18 +79,37 @@
     &__list {
       order: 3;
       display: inline-flex;
-      width: 334px;
+      width: 310px;
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 0px;
       padding: 0px;
+      padding-top: 15px;
+      padding-left: 5px;
       list-style: none;
+    }
+
+    &__item {
+      border: none;
+    }
+
+    &__list,
+    &__user {
+
+      a {
+        padding: 0px;
+      }
+    }
+
+    &__list {
+      font-size: $font-size;
+      line-height: $font-size + 9;
     }
 
     &__user {
       margin: 0px;
       padding: 0px;
-      padding-top: 36px;
+      padding-top: 34px;
       padding-bottom: 35px;
       list-style: none;
       display: inline-flex;
@@ -104,6 +128,9 @@
       order: 4;
       margin: 0px;
       padding: 0px;
+      padding-top: 15px;
+      font-size: $font-size;
+      line-height: $font-size + 9;
     }
   }
 }
@@ -124,6 +151,10 @@
     &__list {
       order: 1;
       width: 377px;
+      padding: 0px;
+      padding-top: 34px;
+      font-size: $font-size--middle;
+      line-height: $font-size--middle + 7;
     }
 
     &__user {
@@ -135,10 +166,23 @@
       display: inline-flex;
       justify-content: space-between;
       order: 4;
-      width: 350px;
+      width: 317px;
       margin: 0px;
       padding: 0px;
+      padding-top: 13px;
       list-style: none;
+    }
+
+    &__list-hit {
+
+      a {
+        padding-top: 15px;
+        font-size: $font-size;
+        line-height: $font-size + 9;
+        font-weight: bold;
+        color: $color-black;
+        text-decoration: none;
+      }
     }
 
     &__delivery {
