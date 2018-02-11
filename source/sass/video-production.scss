@@ -2,6 +2,7 @@
   width: 260px;
   margin: 0 auto;
   padding: 0 30px;
+  margin-bottom: 58px;
 
   &__title {
     margin: 0px;
@@ -16,7 +17,7 @@
 
     p {
       margin: 0px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       padding-left: 36px;
       padding-right: 39px;
       font-size: $font-size--h5;
@@ -27,7 +28,7 @@
   &__link {
     width: 186px;
     align-self: center;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 14px;
     margin-bottom: 34px;
     font-size: $font-size--middle;
@@ -37,7 +38,7 @@
     text-align: center;
     text-transform: uppercase;
     color: $text-dark;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
   }
 
   &__inner {
@@ -48,16 +49,15 @@
   }
 
   &__title {
-    width: 170px;
     padding-left: 90px;
-    margin-top: 30px;
-    margin-bottom: 28px;
+    margin-top: 27px;
+    margin-bottom: 25px;
   }
 
   &__image {
     width: 260px;
     height: 150px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -66,6 +66,7 @@
   .video-production {
     width: 668px;
     margin: 0 auto;
+    margin-bottom: 62px;
     padding: 0px;
 
     &__inner {
@@ -75,11 +76,18 @@
     }
 
     &__image {
+      width: 668px;
+      height: 455px;
       order: 1;
+      margin-bottom: 38px;
     }
 
     &__title {
       order: 2;
+      margin: 0px;
+      margin-bottom: 35px;
+      padding-left: 108px;
+      font-size: $font-size--h4 + 1;
     }
 
     &__description {
@@ -91,6 +99,7 @@
         padding-right: 42px;
         font-size: $font-size;
         line-height: $font-size + 15;
+        margin-bottom: 32px;
       }
     }
 
@@ -99,6 +108,7 @@
       width: 582px;
       margin-left: 43px;
       margin-right: 43px;
+      margin-bottom: 46px;
     }
   }
 }
@@ -109,33 +119,43 @@
     position: relative;
     width: 1050px;
     margin: 0 auto;
+    margin-bottom: 105px;
 
     &__inner {
       display: flex;
       align-items: flex-end;
       width: 1050px;
+      min-height: 453px;
     }
 
     &__image {
       position: absolute;
       left: 0;
       top: 0;
-      width: 683px;
+      margin: 0px;
+      width: 682px;
+      height: 455px;
     }
 
     &__title {
-      padding-right: 60px;
+      margin-bottom: 44px;
+      padding-right: 107px;
+      padding-top: 99px;
+      padding-left: 92px;
+      width: 170px;
     }
 
     &__description {
 
       p {
         width: 223px;
+        padding-right: 52px;
       }
     }
 
     &__link {
       width: 230px;
+      margin-top: auto;
       align-self: flex-end;
     }
   }

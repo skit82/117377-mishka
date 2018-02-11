@@ -1,11 +1,13 @@
 .form {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 55px;
   padding: 0 30px;
 
   &__legend {
     margin: 0px;
     padding: 0px;
+    padding-bottom: 26px;
     font-size: $font-size--middle;
     line-height: $font-size--middle - 1;
     font-weight: bold;
@@ -28,6 +30,17 @@
   &__inner {
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  &__legend::before {
+    position: absolute;
+    content: "";
+    right: 0px;
+    top: 7px;
+    height: 1px;
+    width: 198px;
+    background-color: $text-aqua;
   }
 
   &__completion {
@@ -38,6 +51,7 @@
   &__submit {
     display: block;
     width: 258px;
+    margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: $font-size--middle;
@@ -47,7 +61,7 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid #000000;
+    border: 2px solid $color-black;
   }
 }
 
@@ -66,6 +80,11 @@
     &__legend {
       width: 167px;
       align-items: flex-start;
+      padding-top: 18px;
+    }
+
+    &__legend::before {
+      display: none;
     }
 
     &__inner--item {
@@ -75,7 +94,7 @@
 
     &__wrapper {
       display: flex;
-      margin-top: 57px;
+      margin-top: 54px;
       margin-bottom: 52px;
     }
 
@@ -83,6 +102,10 @@
       order: 2;
       margin-left: auto;
       align-self: center;
+    }
+
+    &__submit {
+      margin: 0px;
     }
   }
 }
