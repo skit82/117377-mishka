@@ -48,9 +48,13 @@
     height: 19px;
   }
 
-  &__item {
+  &__button {
+    padding-right: 33px;
+  }
+
+  &__footer {
     display: flex;
-    width: 206px;
+    width: 100%;
     margin-top: auto;
     margin-bottom: 32px;
   }

@@ -95,7 +95,13 @@
     }
 
     &__map {
+      display: flex;
       order: 3;
+    }
+
+    &__image {
+      width: 768px;
+      height: 467;
     }
 
     &__link {
@@ -118,18 +124,20 @@
       flex-wrap: wrap;
       width: 297px;
       margin-left: 175px;
-      margin-bottom: 84px;
     }
 
     &__title {
       margin-left: 175px;
-      margin-bottom: 62px;
+      margin-bottom: 60px;
       padding-top: 62px;
+      font-size: $font-size--md + 26;
+      line-height: $font-size--md + 30px;
     }
 
     &__list-key {
       flex-grow: 0;
       min-height: 66px;
+      margin: 0px;
       margin-right: 25px;
     }
 
@@ -143,6 +151,11 @@
       position: absolute;
       right: 0;
       top: 0;
+    }
+
+    &__image {
+      width: 525px;
+      height: 456px;
     }
 
     &__link {
