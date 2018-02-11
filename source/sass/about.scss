@@ -21,6 +21,11 @@
     line-height: $font-size--middle + 3;
     font-weight: bold;
     color: $color-black;
+    margin-bottom: 86px;
+  }
+
+  &__item:nth-child(6) {
+    margin-bottom: 0px;
   }
 
   &__inner {
@@ -43,9 +48,15 @@
 @media (min-width: $screen-md) {
 
   .about {
+    margin-bottom: 80px;
 
     &__inner {
       width: 668px;
+    }
+
+    &__title {
+      margin: 0px;
+      padding-bottom: 100px;
     }
 
     &__list {
@@ -61,6 +72,10 @@
       line-height: $font-size + 7;
       font-weight: bold;
     }
+
+    &__item:nth-child(5) {
+      margin: 0px;
+    }
   }
 }
 
@@ -70,6 +85,12 @@
 
     &__inner {
       width: 1050px;
+    }
+
+    &__title {
+      margin-left: 175px;
+      font-size: $font-size--md + 27;
+      line-height: $font-size--md + 30;
     }
 
     &__list {

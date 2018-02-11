@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-bottom: 75px;
   padding: 0 30px;
 
   &__title {
@@ -32,6 +33,11 @@
     }
   }
 
+  &__foto {
+    width: 260px;
+    height: 315px;
+  }
+
   &__properties {
     width: 260px;
     margin-bottom: 28px;
@@ -57,9 +63,18 @@
     color: $text-dark;
   }
 
+  &__item-picture {
+    height: 315px;
+    margin-bottom: 30px;
+  }
+
+  &__item-buy {
+    display: flex;
+    flex-direction: column;
+  }
   &__price {
-    margin-top: 28px;
-    margin-bottom: 25px;
+    align-self: center;
+    margin-bottom: 30px;
     font-size: $font-size--middle;
     line-height: $font-size--middle + 7;
     font-weight: bold;
@@ -67,12 +82,17 @@
   }
 
   &__order {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
     font-size: $font-size--middle;
     line-height: $font-size--middle + 3;
     font-weight: bold;
     color: $text-dark;
     text-transform: uppercase;
     text-decoration: none;
+    border: 1px solid #000000;
   }
 
   &__item-buy {
@@ -91,7 +111,8 @@
     width: 668px;
     align-items: start;
     margin: 0 auto;
-    padding: 0 50px;
+    margin-bottom: 128px;
+    padding: 0px;
 
     &__text {
       width: auto;
@@ -133,6 +154,12 @@
       position: absolute;
       top: 0px;
       right: 0px;
+      z-index: -1;
+    }
+
+    &__foto {
+      width: 334px;
+      height: 406px;
     }
 
     &__description {
@@ -142,7 +169,8 @@
         font-size: $font-size--middle;
         line-height: $font-size--middle + 13;
         margin: 0px;
-        margin-bottom: 54px;
+        margin-top: -7px;
+        margin-bottom: 37px;
       }
     }
 
@@ -179,6 +207,7 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0px;
+    padding-bottom: 166px;
 
     &__text {
       display: flex;
@@ -193,6 +222,8 @@
 
     &__title {
       order: 2;
+      font-size: $font-size--md + 26;
+      line-height: $font-size--md + 30px;
     }
 
     &__hit {
@@ -209,10 +240,15 @@
       position: absolute;
     }
 
+    &__foto {
+      width: 525px;
+      height: 636px;
+    }
+
     &__description {
 
       p {
-        margin-bottom: 64px;
+        margin-bottom: 44px;
       }
     }
 

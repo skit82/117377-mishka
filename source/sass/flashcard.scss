@@ -5,8 +5,8 @@
 
   &__title {
     margin: 0px;
-    margin-bottom: 22px;
-    padding-top: 31px;
+    margin-bottom: 16px;
+    padding-top: 27px;
     font-size: $font-size--middle;
     line-height: $font-size--middle + 7;
     font-weight: bold;
@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    min-height: 177px;
     padding-left: 28px;
     border: 1px solid #ededed;
   }
@@ -37,7 +38,6 @@
   }
 
   &__price {
-    margin-bottom: 32px;
     line-height: $font-size + 9;
     font-weight: bold;
     color: $color-black;
@@ -48,10 +48,15 @@
     height: 19px;
   }
 
-  &__item {
+  &__button {
+    padding-right: 33px;
+  }
+
+  &__footer {
     display: flex;
-    width: 206px;
+    width: 100%;
     margin-top: auto;
+    margin-bottom: 32px;
   }
 
   &__price {
@@ -79,11 +84,11 @@
     &__title {
       padding: 0px;
       padding-top: 28px;
+      font-size: $font-size--h4 + 1;
     }
 
     &__price {
       margin-top: auto;
-      margin-bottom: 28px;
     }
   }
 }
@@ -93,8 +98,17 @@
   .flashcard {
     display: flex;
     flex-direction: column;
-    width: 315px;
+    width: 317px;
     margin: 0px;
     margin-bottom: 57px;
+
+    &__image {
+    width: 317px;
+    height: 462px;
+    }
+
+    &__inner {
+    min-height: 195px;
+    }
   }
 }
