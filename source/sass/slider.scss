@@ -6,6 +6,13 @@
     margin-top: 36px;
     margin-bottom: 38px;
   }
+
+  &__arrow {
+    width: 130px;
+    padding: 10px 0px;
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: $screen-md) {
@@ -17,7 +24,19 @@
       position: absolute;
       bottom: 20px;
       right: 0px;
+      width: 175px;
       margin: 0px;
+    }
+
+    &__arrow {
+      background-color: #ffffff;
+      border: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    &__arrow:nth-child(2) {
+      margin-left: 54px;
     }
   }
 }

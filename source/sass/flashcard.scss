@@ -19,7 +19,7 @@
   }
 
   &__link {
-    display: flex;
+    height: 195px;
     text-decoration: none;
   }
 
@@ -73,12 +73,16 @@
 
     &__image {
       width: 334px;
-      height: 332px;
+      height: 334px;
     }
 
     &__inner {
       flex-grow: 1;
       padding-left: 28px;
+    }
+
+    &__link {
+      height: 334px;
     }
 
     &__title {
@@ -109,6 +113,10 @@
 
     &__inner {
     min-height: 195px;
+    }
+
+    &__link {
+      height: 462px;
     }
   }
 }

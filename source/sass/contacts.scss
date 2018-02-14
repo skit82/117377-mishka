@@ -28,6 +28,10 @@
     padding: 0 30px;
   }
 
+  &__foto {
+    display: none;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -72,13 +76,29 @@
     margin-bottom: 57px;
     padding: 0px;
 
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 38px;
+    }
+
     &__title {
       order: 1;
+      align-self: center;
+      font-size: $font-size--md + 16;
+      line-height: $font-size--md + 23;
       padding: 0px;
     }
 
-    &__list {
+    &__foto {
+      display: block;
       order: 2;
+      width: 47px;
+      height: 81px;
+    }
+
+    &__list {
+      order: 3;
       margin-bottom: 62px;
       padding: 0px;
     }
@@ -101,7 +121,7 @@
 
     &__image {
       width: 768px;
-      height: 467;
+      height: 467px;
     }
 
     &__link {
@@ -126,12 +146,25 @@
       margin-left: 175px;
     }
 
+    &__header {
+      justify-content: start;
+      padding-top: 60px;
+    }
+
     &__title {
-      margin-left: 175px;
+      order: 2;
       margin-bottom: 60px;
-      padding-top: 62px;
+      margin-left: 64px;
       font-size: $font-size--md + 26;
       line-height: $font-size--md + 30px;
+    }
+
+    &__foto {
+      display: block;
+      order: 1;
+      margin-left: 64px;
+      width: 47px;
+      height: 81px;
     }
 
     &__list-key {
