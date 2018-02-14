@@ -141,8 +141,8 @@
     }
 
     &__title {
-      padding-top: 156px;
-      padding-left: 217px;
+      padding-top: 155px;
+      padding-left: 215px;
       padding-right: 214px;
       font-size: $font-size--md + 26;
       line-height: $font-size--md + 30;
@@ -150,6 +150,11 @@
 
     &__decor {
       width: 525px;
+    }
+
+    &__link {
+      padding-top: 28px;
+      padding-left: 37px;
     }
   }
 }

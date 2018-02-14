@@ -148,6 +148,14 @@
     &__logo {
       order: 2;
       width: 323px;
+      padding: 0px;
+    }
+
+    &__logo-image {
+      width: 149px;
+      height: 72px;
+      margin-top: 10px;
+      margin-right: 40px;
     }
 
     &__list {
@@ -168,10 +176,10 @@
       display: inline-flex;
       justify-content: space-between;
       order: 4;
-      width: 317px;
+      width: 315px;
       margin: 0px;
       padding: 0px;
-      padding-top: 13px;
+      padding-top: 12px;
       list-style: none;
       z-index: 12;
     }
