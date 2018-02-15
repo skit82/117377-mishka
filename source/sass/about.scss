@@ -21,7 +21,7 @@
     line-height: $font-size--middle + 3;
     font-weight: bold;
     color: $color-black;
-    margin-bottom: 86px;
+    margin-bottom: 32px;
   }
 
   &__item:nth-child(6) {
@@ -41,7 +41,39 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+  }
+
+  &__flower {
+    padding-bottom: 20px;
+    fill: $text-aqua;
+  }
+
+  &__money {
+    padding-bottom: 28px;
+    fill: $text-aqua;
+  }
+
+  &__heart {
+    padding-bottom: 24px;
+    fill: $text-aqua;
+  }
+
+  &__ball {
+    padding-bottom: 20px;
+    fill: $text-aqua;
+  }
+
+  &__rocket {
+    padding-bottom: 28px;
+    fill: $text-aqua;
+  }
+
+  &__gift {
+    padding-bottom: 22px;
+    fill: $text-aqua;
   }
 }
 
@@ -56,7 +88,9 @@
 
     &__title {
       margin: 0px;
-      padding-bottom: 100px;
+      padding-bottom: 44px;
+      font-size: $font-size--md + 16;
+      line-height: $font-size--md + 23;
     }
 
     &__list {
@@ -68,14 +102,65 @@
 
     &__item {
       width: 334px;
+      margin-bottom: 58px;
       font-size: $font-size + 5;
       line-height: $font-size + 7;
       font-weight: bold;
     }
 
-    &__item:nth-child(5) {
+    &__item:nth-child(3) {
       margin: 0px;
     }
+
+    &__item--love {
+      order: 2;
+    }
+
+    &__ball {
+      margin-left: 4px;
+      margin-top: 9px;
+      padding-bottom: 17px;
+    }
+
+    &__item--homeland {
+      order: 4;
+    }
+
+    &__item--package {
+      order: 6;
+    }
+
+    &__gift {
+      margin-left: 3px;
+    }
+
+    &__item--ecological {
+      order: 1;
+    }
+
+    &__flower {
+      margin-left: 10px;
+      margin-top: 5px;
+      padding-bottom: 18px;
+    }
+
+    &__item--price {
+      order: 3;
+    }
+
+    &__money {
+      margin-left: 4px;
+      padding-bottom: 27px;
+    }
+
+    &__item--likes {
+      order: 5;
+    }
+
+    &__heart {
+      margin-left: 10px;
+    }
+
   }
 }
 

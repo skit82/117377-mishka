@@ -32,9 +32,24 @@
   }
 
   &__decor {
+    display: flex;
+    justify-content: space-between;
     width: auto;
     height: 103px;
     margin: 0px;
+  }
+
+  &__interior {
+    padding-top: 23px;
+    padding-right: 5px;
+    fill: #149080;
+    fill-opacity: 0.5;
+  }
+
+  &__toy {
+    padding-top: 21px;
+    fill: #149080;
+    fill-opacity: 0.5;
   }
 
   &__decor {
@@ -77,6 +92,7 @@
     background-color: #f9f9f9;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px auto;
+    margin-bottom: 46px;
 
     @media (min-resolution: 144dpi) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -116,7 +132,19 @@
       height: 119px;
     }
 
+    &__interior {
+      padding-top: 30px;
+      padding-right: 34px;
+    }
+
+    &__toy {
+      padding-top: 31px;
+      padding-right: 33px;
+    }
+
     &__link {
+      padding-top: 28px;
+      padding-left: 37px;
       font-size: $font-size--h4 + 1;
       line-height: $font-size--h4 + 11;
     }
