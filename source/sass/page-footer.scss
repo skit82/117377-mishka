@@ -37,16 +37,18 @@
       width: 668px;
       mi: 42px;
       margin: 0 auto;
-      padding-top: 50px;
+      padding-top: 45px;
       padding-bottom: 46px;
     }
 
     &__logo-image {
+      width: 102px;
       display: block;
+      padding-bottom: 5px;
     }
 
     &__logo {
-      width: 167px;
+      width: 218px;
       flex-grow: 0;
       margin-left: 0px;
       align-self: center;
@@ -57,6 +59,21 @@
       padding: 0px;
       padding-top: 10px;
       margin-right: 0;
+
+      p {
+        margin: 0px;
+        padding-top: 8px;
+        font-size: $font-size--middle + 2;
+        line-height: $font-size--middle + 1;
+        font-weight: bold;
+        color: $color-black;
+      }
+    }
+
+    &__foto {
+      width: 27px;
+      height: 34px;
+      fill: $text-aqua;
     }
   }
 }
@@ -72,19 +89,20 @@
     }
 
     &__logo {
-      width: 350px;
+      width: 450px;
       margin-left: 0px;
     }
 
     &__copyright {
-      width: 350px;
+      width: 455px;
       margin: 0px;
       flex-grow: 0;
-    }
 
-    &__copyright-text {
-      margin-left: auto;
-      margin-right: 30px;
+      p {
+        margin-left: auto;
+        margin-right: 29px;
+        padding-top: 6px;
+      }
     }
   }
 }

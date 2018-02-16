@@ -167,14 +167,15 @@
 @media (min-width: $screen-xl) {
 
   .about {
+    margin-bottom: 90px;
 
     &__inner {
       width: 1050px;
     }
 
     &__title {
-      margin-left: 175px;
-      font-size: $font-size--md + 27;
+      margin-left: 170px;
+      font-size: $font-size--md + 26;
       line-height: $font-size--md + 30;
     }
 

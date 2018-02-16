@@ -12,15 +12,25 @@
 
   .social-list {
     display: flex;
-    align-self: center;
+    justify-content: space-between;
+    width: 142px;
     padding: 0;
+    padding-top: 12px;
+
+    &__insta {
+      padding-top: 5px;
+    }
+
+    &__twitter {
+      padding-top: 5px;
+    }
   }
 }
 
 @media (min-width: $screen-xl) {
 
   .social-list {
-    width: 350px;
-    justify-content: center;
+    width: 141px;
+
   }
 }
