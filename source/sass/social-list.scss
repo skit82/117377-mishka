@@ -1,10 +1,15 @@
 .social-list {
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 143px;
   margin: 0px;
+  margin-left: 56px;
+  margin-right: 59px;
   padding: 0px;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 28px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #e5e5e5;
   list-style: none;
 }
 
@@ -12,8 +17,10 @@
 
   .social-list {
     display: flex;
+    align-items: start;
     justify-content: space-between;
     width: 142px;
+    margin: 0px;
     padding: 0;
     padding-top: 12px;
 
@@ -31,6 +38,5 @@
 
   .social-list {
     width: 141px;
-
   }
 }

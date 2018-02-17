@@ -40,6 +40,31 @@
     padding: 0 30px;
   }
 
+  &__list-link {
+    position: relative;
+    text-decoration: none;
+    color: $text-dark;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100%;
+      bottom: -5px;
+      left: 0;
+      background-color: #63d1bb;
+    }
+
+    &:hover {
+      opacity: 1;
+      color: $text-aqua;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   &__list-key {
     flex-grow: 1;
     margin-bottom: 50px;

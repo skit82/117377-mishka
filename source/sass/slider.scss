@@ -36,7 +36,16 @@
     }
 
     &__arrow:nth-child(2) {
-      margin-left: 25px;
+      margin-left: 33px;
+      margin-right: 14px;
+    }
+
+    &__arrow:hover {
+      opacity: 0.6;
+    }
+
+    &__arrow:active {
+      opacity: 0.3;
     }
   }
 }

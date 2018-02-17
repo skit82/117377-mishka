@@ -33,7 +33,42 @@
   }
 
   &__icon-cart {
-    fill:#231F20;
+    opacity: 0.2;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      fill: $text-aqua;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__icon-search {
+    opacity: 0.2;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      fill: $text-aqua;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__item {
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    a:active {
+      opacity: 0.3;
+    }
   }
 
   &__toggle {
@@ -75,7 +110,16 @@
       margin-left: 0px;
       padding: 0px;
       padding-top: 25px;
+      height: 66px;
       border: none;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &__logo-image {

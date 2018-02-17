@@ -11,6 +11,14 @@
     line-height: $font-size--middle + 7;
     font-weight: bold;
     color: $color-black;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__image {
@@ -54,6 +62,7 @@
 
   &__footer {
     display: flex;
+    position: relative;
     width: 100%;
     margin-top: auto;
     margin-bottom: 32px;
@@ -61,6 +70,19 @@
 
   &__price {
     margin-right: auto;
+  }
+
+  &__cart {
+    opacity: 0.2;
+
+    &:hover {
+      opacity: 1;
+      fill: $text-aqua;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -70,6 +92,16 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 54px;
+
+    &:hover {
+      box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s;
+    }
+
+    &:active {
+      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s;
+    }
 
     &__image {
       width: 334px;
@@ -83,7 +115,8 @@
     }
 
     &__link {
-      height: 334px;
+      flex-shrink: 0;
+      min-height: 334px;
     }
 
     &__title {
@@ -91,6 +124,7 @@
       padding-top: 24px;
       margin-bottom: 6px;
       font-size: $font-size--h4 + 1;
+      letter-spacing: 0.01em;
     }
 
     &__text {
@@ -99,13 +133,27 @@
 
     &__price {
       margin-top: auto;
-      padding-top: 20px;
+      padding-top: 22px;
       padding-left: 6px;
       font-size: $font-size--middle;
     }
 
+    &__button {
+      position: absolute;
+      right: 5px;
+      top: 22px;
+      padding: 0px;
+      color: #e8e8e8;
+    }
+
+    &__cart {
+      width: 21px;
+      height: 18px;
+      fill: #e8e8e8;
+    }
+
     &__footer {
-      margin-bottom: 25px;
+      margin-bottom: 27px;
       border-top: 1px solid #ececec;
     }
   }

@@ -88,7 +88,7 @@
 
     &__title {
       margin: 0px;
-      padding-bottom: 44px;
+      padding-bottom: 41px;
       font-size: $font-size--md + 16;
       line-height: $font-size--md + 23;
     }
@@ -171,6 +171,7 @@
 
     &__inner {
       width: 1050px;
+      margin: 0 auto;
     }
 
     &__title {

@@ -50,6 +50,12 @@
     <symbol width="27" height="34" viewBox="0 0 26.943 34.09"  id="logo-htmlacademy">
       <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
     </symbol>
+    <symbol width="25" height="24" viewBox="0 0 24.829 24.333"  id="icon-phone">
+      <path d="M17.321 24.333h-1.115c-4.904-.58-8.497-2.857-11.11-5.772-2.623-2.924-4.694-6.686-5.096-11.744v-1.358c.091-.921.544-1.55 1.067-2.086.65-.666 1.63-1.522 2.522-1.553.659-.022 1.78.451 2.232 1.066.388.53.595 1.59.775 2.378.185.797.6 1.95.485 2.717-.176 1.196-1.764 1.703-2.231 2.572 1.551 3.721 4.089 6.456 7.472 8.345.847-.465 1.595-1.864 2.767-1.892.428-.012.972.209 1.406.34.477.143.891.326 1.311.484.705.266 1.957.621 2.378 1.213.433.61.681 1.608.581 2.231-.194 1.234-2.227 2.603-3.444 3.059zM12.529 1.528c5.949 0 10.771 4.822 10.771 10.771h1.529c0-6.792-5.506-12.299-12.3-12.299v1.528zm0 7.799v1.552c.785 0 1.421.636 1.421 1.42h1.553c-.001-1.642-1.331-2.972-2.974-2.972zm0-3.081c3.345 0 6.056 2.71 6.056 6.054h1.588c0-4.22-3.422-7.641-7.644-7.641v1.587z"/>
+    </symbol>
+    <symbol width="32" height="32" viewBox="0 0 32 32"  id="icon-mail">
+      <path d="M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zm-26 5.25l6.999 5.25-6.999 5.25v-10.5zm28 11.75c0 1.104-.898 2-2 2h-24c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277c.533.397 1.166.6 1.8.6.633 0 1.266-.201 1.799-.6l4.369-3.277 7.832 5.875zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4l-4.135-3.102-.833-.625-7.832-5.874v-.001c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"/>
+    </symbol>
   </svg>
   <header  class="page-header">
     <div class="page-header__inner">
@@ -62,7 +68,7 @@
           </picture>
         </a>
         <button  class="main-nav__toggle" type="button"><span></span>Открыть меню</button>
-        <ul  class="main-nav__list">
+        <ul  class="main-nav__list"  id="main-nav-list">
           <li  class="main-nav__item">
             <a  class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -70,7 +76,7 @@
             <a  class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__user">
+        <ul class="main-nav__user"  id="main-nav-user">
           <li  class="main-nav__item  main-nav__item--search">
             <svg class="main-nav__icon-search" width="18" height="18">
               <use xlink:href="#icon-search"></use>
@@ -116,40 +122,43 @@
       </div>
     </div>
     <section  class="product">
-      <div class="product__text">
-        <h2  class="product__title">Вязаные корзинки</h2>
-        <h3  class="product__hit">Товар недели</h3>
-      </div>
-      <div class="product__inner">
-        <div  class="product__description">
-          <p>
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
+      <div class="product__wrapper">
+        <div class="product__text">
+          <h2  class="product__title">Вязаные корзинки</h2>
+          <h3  class="product__hit">Товар недели</h3>
         </div>
-        <table  class="product__properties">
-          <tr>
-            <td  class="product__property-name">Цвет:</td>
-            <td  class="product__property-value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td  class="product__property-name">Диаметр:</td>
-            <td  class="product__property-value">25 см</td>
-          </tr>
-          <tr>
-            <td  class="product__property-name">Высота:</td>
-            <td  class="product__property-value">15 см</td>
-          </tr>
-        </table>
-        <div class="product__item-picture">
-          <picture>
-            <source  media="(min-width: 1150px)"  srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source  media="(min-width: 768px)"  srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img  class="product__foto" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Фото товара">
-          </picture>
-        </div>
-        <div class="product__item-buy">
-          <span  class="product__price">Цена: 990 руб.</span>
-          <a  class="product__order button" href="#">Заказать</a>
+        <div class="product__inner">
+          <div  class="product__description">
+            <p>
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+          </div>
+          <table  class="product__properties">
+            <tr>
+              <td  class="product__property-name">Цвет:</td>
+              <td  class="product__property-value">«Тиффани»/серый
+              </td>
+            </tr>
+            <tr>
+              <td  class="product__property-name">Диаметр:</td>
+              <td  class="product__property-value">25 см</td>
+            </tr>
+            <tr>
+              <td  class="product__property-name">Высота:</td>
+              <td  class="product__property-value">15 см</td>
+            </tr>
+          </table>
+          <div class="product__item-picture">
+            <picture>
+              <source  media="(min-width: 1150px)"  srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source  media="(min-width: 768px)"  srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img  class="product__foto" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Фото товара">
+            </picture>
+          </div>
+          <div class="product__item-buy">
+            <span  class="product__price">Цена: 990 руб.</span>
+            <a  class="product__order button" href="#">Заказать</a>
+          </div>
         </div>
       </div>
     </section>
@@ -196,10 +205,13 @@
       </ul>
     </section>
     <section  class="reviews">
-      <h2  class="reviews__title">Отзывы</h2>
+      <div  class="reviews__wrapper">
+        <h2  class="reviews__title">Отзывы</h2>
         <div  class="slider">
           <blockquote  class="reviews__item  slider__item">
-            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии стали более стильными, а таккже набирают больше лайков!</p>
+            <p>
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии стали более стильными, а таккже набирают больше лайков!
+            </p>
             <b  class="reviews__name">Анастасия Красильникова</b>
             <div>
               <a  class="reviews__nik-link" href="">@misssssiskras</a>
@@ -215,6 +227,7 @@
           </div>
         </div>
         <a  class="reviews__link  button" href="#">Написать</a>
+      </div>
     </section>
     <section  class="contacts">
       <div class="contacts__header">
@@ -223,7 +236,7 @@
       </div>
       <dl  class="contacts__list">
         <dt  class="contacts__list-key">e-mail:</dt>
-        <dd  class="contacts__list-value"><a  class="contacts__list-link" href="">nfo@mimimishkashop.ru</a></dd>
+        <dd  class="contacts__list-value"><a  class="contacts__list-link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
         <dt  class="contacts__list-key">адрес:</dt>
         <dd  class="contacts__list-value">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
       </dl>
@@ -275,5 +288,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.js"></script>
 </body>
 </html>

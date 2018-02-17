@@ -72,20 +72,27 @@
     &__inner {
       display: flex;
       flex-direction: column;
+      position: relative;
       width: 668px;
+    }
+
+    &__play {
+      position: absolute;
+      left: 283px;
+      top: 189px;
     }
 
     &__image {
       width: 668px;
-      height: 455px;
+      height: 453px;
       order: 1;
-      margin-bottom: 38px;
+      margin-bottom: 29px;
     }
 
     &__title {
       order: 2;
       margin: 0px;
-      margin-bottom: 35px;
+      margin-bottom: 33px;
       padding-left: 108px;
       font-size: $font-size--h4 + 1;
     }
@@ -99,7 +106,7 @@
         padding-right: 42px;
         font-size: $font-size;
         line-height: $font-size + 15;
-        margin-bottom: 32px;
+        margin-bottom: 36px;
       }
     }
 
@@ -109,6 +116,8 @@
       margin-left: 43px;
       margin-right: 43px;
       margin-bottom: 46px;
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
   }
 }

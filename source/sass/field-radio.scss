@@ -20,32 +20,61 @@
     margin: 0px;
   }
 
-  &__name::before {
-    position: absolute;
-    content: "";
-    width: 37px;
-    height: 37px;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
-    border: 2px solid $text-dark;
-  }
+  // &__name::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 37px;
+  //   height: 37px;
+  //   left: 0;
+  //   top: 0;
+  //   border-radius: 50%;
+  //   border: 2px solid $text-dark;
+  // }
 
-  &__name::after {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    left: 13px;
-    top: 13px;
-    background-color: $text-aqua;
-    border-radius: 50%;
+  // &__name::after {
+  //   position: absolute;
+  //   content: "";
+  //   width: 16px;
+  //   height: 16px;
+  //   left: 13px;
+  //   top: 13px;
+  //   background-color: $text-aqua;
+  //   border-radius: 50%;
+  // }
+  &__text {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 37px;
+      height: 37px;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      border: 2px solid $text-dark;
+
+      input:checked ~ & {
+        display: block;
+      }
+    }
+
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      left: 13px;
+      top: 13px;
+      background-color: $text-aqua;
+      border-radius: 50%;
+    }
   }
 
   &__input[type="radio"] {
     display: none;
   }
-
 }
 
 @media (min-width: $screen-md) {
@@ -55,6 +84,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 501px;
+    margin-bottom: 53px;
 
     &__name {
       margin-bottom: 24px;
