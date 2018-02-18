@@ -31,6 +31,7 @@
   &__inner {
     width: 260px;
     margin: 0 auto;
+    padding: 0 30px;
   }
 
   &__list {
@@ -47,22 +48,23 @@
   }
 
   &__flower {
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     fill: $text-aqua;
   }
 
   &__money {
-    padding-bottom: 28px;
+    padding-bottom: 24px;
     fill: $text-aqua;
   }
 
   &__heart {
     padding-bottom: 24px;
+    padding-left: 6px;
     fill: $text-aqua;
   }
 
   &__ball {
-    padding-bottom: 20px;
+    padding-bottom: 16px;
     fill: $text-aqua;
   }
 
@@ -72,7 +74,7 @@
   }
 
   &__gift {
-    padding-bottom: 22px;
+    padding-bottom: 19px;
     fill: $text-aqua;
   }
 }
@@ -102,7 +104,7 @@
 
     &__item {
       width: 334px;
-      margin-bottom: 58px;
+      margin-bottom: 61px;
       font-size: $font-size + 5;
       line-height: $font-size + 7;
       font-weight: bold;
@@ -190,6 +192,7 @@
 
     &__item {
       width: 350px;
+      margin-bottom: 59px;
     }
   }
 }

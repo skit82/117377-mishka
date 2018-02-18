@@ -4,6 +4,51 @@
   padding: 0 30px;
   margin-bottom: 58px;
 
+  &__inner {
+    position: relative;
+
+    &:hover {
+      box-shadow: 0px 6px 10px 0px  rgba(0, 0, 0, 0.1);
+      transition: all 0.2s;
+    }
+
+    &:active {
+      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s;
+    }
+  }
+
+  &__list {
+    display: flex;
+    position: relative;
+  }
+
+  &__video {
+    position: absolute;
+    top: 32px;
+    left: 40px;
+    width: 32px;
+    height: 32px;
+    fill: $text-aqua;
+  }
+
+  &__play {
+    position: absolute;
+    left: 74px;
+    top: 137px;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.2s;
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.6;
+      transition: all 0.2s;
+    }
+  }
+
   &__title {
     margin: 0px;
     font-size: $font-size--middle;
@@ -82,6 +127,12 @@
       top: 189px;
     }
 
+    &__video {
+      position: absolute;
+      left: 40px;
+      top: -4px;
+    }
+
     &__image {
       width: 668px;
       height: 453px;
@@ -89,8 +140,11 @@
       margin-bottom: 29px;
     }
 
-    &__title {
+    &__list {
       order: 2;
+    }
+
+    &__title {
       margin: 0px;
       margin-bottom: 33px;
       padding-left: 108px;
@@ -132,9 +186,17 @@
 
     &__inner {
       display: flex;
+      position: relative;
       align-items: flex-end;
       width: 1050px;
       min-height: 453px;
+    }
+
+    &__play {
+      position: absolute;
+      left: 290px;
+      top: 189px;
+      z-index: 1;
     }
 
     &__image {
@@ -144,13 +206,14 @@
       margin: 0px;
       width: 682px;
       height: 455px;
+      margin-right: 40px;
     }
 
     &__title {
-      margin-bottom: 44px;
-      padding-right: 107px;
-      padding-top: 99px;
-      padding-left: 92px;
+      margin-bottom: 36px;
+      padding-right: 119px;
+      padding-top: 93px;
+      padding-left: 39px;
       width: 170px;
     }
 
@@ -158,14 +221,21 @@
 
       p {
         width: 223px;
-        padding-right: 52px;
+        padding-right: 66px;
       }
     }
 
     &__link {
       width: 230px;
-      margin-top: auto;
+      margin-top: 10px;
+      margin-right: 56px;
       align-self: flex-end;
+    }
+
+    &__video {
+      position: absolute;
+      left: 40px;
+      top: 41px;
     }
   }
 }

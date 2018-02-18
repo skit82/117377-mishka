@@ -70,6 +70,19 @@
     border-width: 2px;
     border: 2px solid $color-black;
   }
+
+  &__item:hover,
+  &__input:hover {
+    border-bottom: 2px solid $text-aqua;
+    outline: none;
+  }
+
+  &__item:active,
+  &__input:active {
+    opacity: 1;
+    border-bottom: 2px solid $text-aqua;
+    outline: none;
+  }
 }
 
 @media (min-width: $screen-md) {
@@ -78,7 +91,7 @@
     width: 500px;
     margin: 0px;
     margin-bottom: 50px;
-    padding-top: 66px;
+    padding-top: 65px;
 
     &__name {
       margin-right: 26px;
@@ -155,6 +168,11 @@
       right: 22px;
       bottom: 7px;
       opacity: 0.2;
+
+      input:hover ~ & {
+        opacity: 1;
+        fill: $text-aqua;
+      }
     }
 
     &__title {
@@ -171,7 +189,7 @@
     }
 
     &__list--textarea {
-      padding-top: 50px;
+      padding-top: 48px;
     }
 
     &__list--textarea .field-text__input {
@@ -183,6 +201,17 @@
       font-size: $font-size--h4;
       line-height: $font-size--h4 - 1;
       background-color: #ffffff;
+
+      &:hover {
+        border: 2px solid $text-aqua;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 1;
+        border: 2px solid $text-aqua;
+        outline: none
+      }
     }
   }
 }

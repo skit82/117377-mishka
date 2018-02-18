@@ -2,16 +2,27 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 143px;
   margin: 0px;
-  margin-left: 56px;
-  margin-right: 59px;
   padding: 0px;
+  padding-left: 57px;
+  padding-right: 63px;
   padding-top: 25px;
-  padding-bottom: 28px;
+  padding-bottom: 19px;
   border-bottom: 1px solid #e5e5e5;
   list-style: none;
+
+  &__item:hover svg {
+    fill: $text-aqua;
+    transition: all 0.2s;
+  }
+
+  &__item:active svg {
+    fill: $text-aqua;
+    opacity: 0.3;
+    transition: all 0.2s;
+  }
 }
+
 
 @media (min-width: $screen-md) {
 
@@ -23,6 +34,7 @@
     margin: 0px;
     padding: 0;
     padding-top: 12px;
+    border: none;
 
     &__insta {
       padding-top: 5px;

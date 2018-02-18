@@ -8,21 +8,28 @@
     flex-direction: column;
     width: 260px;
     margin: 0 auto;
+    padding: 0 30px;
   }
 
   &__copyright {
     display: flex;
     justify-content: space-between;
-    margin-right: 40px;
-    margin-left: 40px;
-    padding-top: 22px;
-    padding-bottom: 24px;
+    margin-right: 41px;
+    margin-left: 38px;
+    padding-top: 23px;
+    padding-bottom: 26px;
+
+    &:active {
+      opacity: 0.3;
+      transition: all 0.2s;
+    }
 
     p {
       margin: 0px;
       font-size: $font-size--h4;
       line-height: $font-size--h4 - 1;
       font-weight: bold;
+      padding-top: 4px;
     }
   }
 
@@ -56,6 +63,7 @@
       width: 102px;
       display: block;
       padding-bottom: 5px;
+
     }
 
     &__logo {
@@ -63,6 +71,11 @@
       flex-grow: 0;
       margin-left: 0px;
       align-self: center;
+
+      &:hover.logo-image {
+        opacity: 1;
+        color: $text-aqua;
+      }
     }
 
     &__copyright {

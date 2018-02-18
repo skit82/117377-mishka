@@ -19,28 +19,6 @@
     margin: 0px;
   }
 
-  // &__name::before {
-  //   position: absolute;
-  //   content: "";
-  //   width: 37px;
-  //   height: 37px;
-  //   left: 0;
-  //   top: 0;
-  //   border: 2px solid $text-dark;
-  // }
-
-  // &__name::after {
-  //   position: absolute;
-  //   content: "";
-  //   left: 10px;
-  //   top: 10px;
-  //   width: 37px;
-  //   height: 37px;
-  //   background-image: url("../img/icon-tick.svg");
-  //   background-repeat: no-repeat;
-  //   background-size: calc(70%);
-  // }
-
   &__text {
     position: relative;
     padding-left: 62px;
@@ -72,6 +50,14 @@
         display: block;
       }
     }
+
+    &:hover::before {
+      border: 2px solid $text-aqua;
+    }
+
+    &:active::after {
+      border: 2px solid rgba(68, 68, 68, 0.3);
+    }
   }
 
   &__input[type="checkbox"] {
@@ -96,36 +82,44 @@
     }
 
     &__name {
-      width: 157px;
+      width: 238px;
       margin-bottom: 28px;
       padding-top: 15px;
       padding-bottom: 16px;
-      padding-left: 82px;
       font-size: $font-size--h4;
     }
 
-  //   &__name::before {
-  //     position: absolute;
-  //     content: "";
-  //     width: 50px;
-  //     height: 48px;
-  //     left: 0;
-  //     top: 0;
-  //     border: 2px solid $text-dark;
-  //   }
+    &__text {
+      padding-left: 80px;
 
-  //   &__name::after {
-  //     position: absolute;
-  //     content: "";
-  //     left: 15px;
-  //     top: 20px;
-  //     width: 37px;
-  //     height: 37px;
-  //     background-image: url("../img/icon-tick.svg");
-  //     background-repeat: no-repeat;
-  //     background-size: calc(70%);
-  //   }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 48px;
+        left: 0;
+        top: 0;
+        border: 2px solid $text-dark;
+      }
+
+      &::after {
+        display: none;
+        position: absolute;
+        content: "";
+        left: 15px;
+        top: 20px;
+        width: 37px;
+        height: 37px;
+        background-image: url("../img/icon-tick.svg");
+        background-repeat: no-repeat;
+        background-size: calc(70%);
+
+        input:checked ~ & {
+        display: block;
+      }
+    }
   }
+}
 }
 
 @media (min-width: $screen-xl) {
@@ -134,7 +128,7 @@
     width: 770px;
 
     &__name {
-      width: 161px;
+      width: 243px;
     }
   }
 }
