@@ -1,8 +1,5 @@
 .form {
-  width: 260px;
-  margin: 0 auto;
   margin-bottom: 55px;
-  padding: 0 30px;
 
   &__legend {
     margin: 0px;
@@ -31,6 +28,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &__legend::before {
@@ -46,6 +45,11 @@
   &__completion {
     font-size: $font-size--h3;
     line-height: $font-size--h3 + 2;
+  }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
   }
 
   &__submit {
@@ -68,19 +72,29 @@
 @media (min-width: $screen-md) {
 
   .form {
-    width: 668px;
-    margin: 0 auto;
+    margin: 0px;
     padding: 0px;
 
     &__inner {
       display: flex;
       flex-direction: row;
+      width: 668px;
+      margin: 0 auto;
     }
 
     &__legend {
       width: 167px;
       align-items: flex-start;
       padding-top: 18px;
+    }
+
+    &__fieldset--header {
+      background-color: #f1f1f1;
+    }
+
+    &__legend--color {
+      padding: 0px;
+      padding-top: 65px;
     }
 
     &__legend::before {
@@ -94,17 +108,23 @@
 
     &__wrapper {
       display: flex;
-      margin-top: 54px;
+      width: 668px;
+      margin: 0 auto;
       margin-bottom: 52px;
     }
 
     &__completion {
       order: 2;
       margin-left: auto;
-      align-self: center;
+      padding-top: 5px;
+      font-size: $font-size--middle;
+      line-height: $font-size--middle + 13;
     }
 
     &__submit {
+      width: 227px;
+      padding-top: 16px;
+      padding-bottom: 16px;
       margin: 0px;
     }
   }
@@ -113,19 +133,28 @@
 @media (min-width: $screen-xl) {
 
   .form {
-    width: 1050px;
-    margin: 0 auto;
+    margin: 0px;
     padding: 0px;
 
+    &__inner {
+      width: 1050px;
+      margin: 0 auto;
+    }
+
     &__legend {
-      width: 175px;
-      text-align: center;
+      width: 110px;
+      padding-left: 65px;
     }
 
     &__wrapper {
       width: 700px;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 48px;
+    }
+
+    &__completion {
+      padding-top: 2px;
     }
   }
 }

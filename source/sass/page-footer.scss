@@ -8,15 +8,33 @@
     flex-direction: column;
     width: 260px;
     margin: 0 auto;
+    padding: 0 30px;
   }
 
   &__copyright {
     display: flex;
     justify-content: space-between;
-    margin-right: 40px;
-    margin-left: 40px;
-    padding-top: 22px;
-    padding-bottom: 24px;
+    margin-right: 41px;
+    margin-left: 38px;
+    padding-top: 23px;
+    padding-bottom: 26px;
+
+    &:active {
+      opacity: 0.3;
+      transition: all 0.2s;
+    }
+
+    p {
+      margin: 0px;
+      font-size: $font-size--h4;
+      line-height: $font-size--h4 - 1;
+      font-weight: bold;
+      padding-top: 4px;
+    }
+  }
+
+  &__foto {
+    fill: $text-aqua;
   }
 
   &__logo-image {
@@ -37,19 +55,27 @@
       width: 668px;
       mi: 42px;
       margin: 0 auto;
-      padding-top: 50px;
+      padding-top: 45px;
       padding-bottom: 46px;
     }
 
     &__logo-image {
+      width: 102px;
       display: block;
+      padding-bottom: 5px;
+
     }
 
     &__logo {
-      width: 167px;
+      width: 218px;
       flex-grow: 0;
       margin-left: 0px;
       align-self: center;
+
+      &:hover.logo-image {
+        opacity: 1;
+        color: $text-aqua;
+      }
     }
 
     &__copyright {
@@ -57,6 +83,22 @@
       padding: 0px;
       padding-top: 10px;
       margin-right: 0;
+
+      p {
+        margin: 0px;
+        padding-top: 8px;
+        font-size: $font-size--middle + 2;
+        line-height: $font-size--middle + 1;
+        font-weight: bold;
+        color: $color-black;
+      }
+    }
+
+    &__foto {
+      width: 27px;
+      height: 34px;
+      padding-top: 2px;
+      fill: $text-aqua;
     }
   }
 }
@@ -72,19 +114,20 @@
     }
 
     &__logo {
-      width: 350px;
+      width: 450px;
       margin-left: 0px;
     }
 
     &__copyright {
-      width: 350px;
+      width: 455px;
       margin: 0px;
       flex-grow: 0;
-    }
 
-    &__copyright-text {
-      margin-left: auto;
-      margin-right: 30px;
+      p {
+        margin-left: auto;
+        margin-right: 29px;
+        padding-top: 9px;
+      }
     }
   }
 }

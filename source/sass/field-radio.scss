@@ -7,7 +7,6 @@
   &__name {
     position: relative;
     padding-top: 12px;
-    padding-left: 62px;
     padding-bottom: 10px;
     margin-bottom: 21px;
     font-size: $font-size--middle;
@@ -20,32 +19,51 @@
     margin: 0px;
   }
 
-  &__name::before {
-    position: absolute;
-    content: "";
-    width: 37px;
-    height: 37px;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
-    border: 2px solid $text-dark;
-  }
+  &__text {
+    position: relative;
+    padding-left: 62px;
+    display: block;
 
-  &__name::after {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    left: 13px;
-    top: 13px;
-    background-color: $text-aqua;
-    border-radius: 50%;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 37px;
+      height: 37px;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      border: 2px solid $text-dark;
+    }
+
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      left: 13px;
+      top: 13px;
+      background-color: $text-aqua;
+      border-radius: 50%;
+
+      input:checked ~ & {
+        display: block;
+      }
+    }
+
+    &:hover::before {
+      border: 2px solid #63d1bb;
+    }
+
+    &:active::before {
+      border: 2px solid rgba(68, 68, 68, 0.3);
+    }
   }
 
   &__input[type="radio"] {
     display: none;
   }
-
 }
 
 @media (min-width: $screen-md) {
@@ -55,35 +73,47 @@
     flex-direction: column;
     align-items: flex-start;
     width: 501px;
+    margin-bottom: 53px;
 
     &__name {
       margin-bottom: 24px;
-      padding-left: 80px;
       padding-top: 17px;
       padding-bottom: 17px;
       font-size: $font-size--h4;
     }
 
-    &__name::before {
-      position: absolute;
-      content: "";
-      width: 50px;
-      height: 50px;
-      left: 0;
-      top: 0;
-      border-radius: 50%;
-      border: 2px solid $text-dark;
-    }
+    &__text {
+      position: relative;
+      padding-left: 80px;
+      display: block;
 
-    &__name::after {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 16px;
-      left: 18px;
-      top: 18px;
-      background-color: $text-aqua;
-      border-radius: 50%;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 50px;
+        left: -2px;
+        top: -17px;
+        border-radius: 50%;
+        border: 2px solid $text-dark;
+      }
+
+
+      &::after {
+        display: none;
+        position: absolute;
+        content: "";
+        width: 19px;
+        height: 20px;
+        left: 15px;
+        top: 0px;
+        background-color: $text-aqua;
+        border-radius: 50%;
+
+        input:checked ~ & {
+          display: block;
+        }
+      }
     }
   }
 }

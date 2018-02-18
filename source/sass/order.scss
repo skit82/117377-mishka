@@ -41,8 +41,9 @@
     margin: 0 auto;
 
     &__title {
-      padding-top: 96px;
-      padding-bottom: 83px;
+      margin-bottom: 72px;
+      padding-top: 95px;
+      padding-bottom: 82px;
       font-size: $font-size--md + 16;
       line-height: $font-size--md + 23;
     }
@@ -51,7 +52,7 @@
       align-items: flex-start;
       width: 668px;
       margin: 0 auto;
-      margin-bottom: 60px;
+      margin-bottom: 56px;
       padding: 0px;
       p {
         margin: 0px;
@@ -68,8 +69,9 @@
   .order {
 
     &__title {
-      padding-top: 106px;
-      padding-bottom: 95px;
+      margin-bottom: 122px;
+      padding-top: 95px;
+      padding-bottom: 102px;
       font-size: $font-size--md + 26;
       line-height: $font-size--md + 30;
     }

@@ -3,7 +3,7 @@
   &__nav {
     position: static;
     display: flex;
-    margin-top: 36px;
+    margin-top: 29px;
     margin-bottom: 38px;
   }
 
@@ -22,9 +22,9 @@
 
     &__nav {
       position: absolute;
-      bottom: 20px;
+      bottom: 12px;
       right: 0px;
-      width: 175px;
+      width: 155px;
       margin: 0px;
     }
 
@@ -36,7 +36,31 @@
     }
 
     &__arrow:nth-child(2) {
-      margin-left: 54px;
+      margin-left: 33px;
+      margin-right: 14px;
+    }
+
+    &__arrow:hover {
+      opacity: 0.6;
+    }
+
+    &__arrow:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+  .slider {
+
+    &__nav {
+      width: 155px;
+    }
+
+    &__arrow:nth-child(2) {
+      margin-right: 15px;
+      margin-left: 35px;
     }
   }
 }

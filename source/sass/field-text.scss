@@ -49,6 +49,14 @@
     background-color: $text-aqua;
   }
 
+  &__phone {
+    display: none;
+  }
+
+  &__mail--item {
+    display: none;
+  }
+
   &__input {
     padding-top: 28px;
     padding-bottom: 20px;
@@ -62,6 +70,19 @@
     border-width: 2px;
     border: 2px solid $color-black;
   }
+
+  &__item:hover,
+  &__input:hover {
+    border-bottom: 2px solid $text-aqua;
+    outline: none;
+  }
+
+  &__item:active,
+  &__input:active {
+    opacity: 1;
+    border-bottom: 2px solid $text-aqua;
+    outline: none;
+  }
 }
 
 @media (min-width: $screen-md) {
@@ -70,9 +91,11 @@
     width: 500px;
     margin: 0px;
     margin-bottom: 50px;
+    padding-top: 65px;
 
     &__name {
       margin-right: 26px;
+      font-size: $font-size--h4;
     }
 
     &__title::before {
@@ -86,14 +109,70 @@
       padding-bottom: 14px;
     }
 
+    &__list:nth-child(2),
+    &__list:nth-child(3) {
+      margin-top: 40px;
+    }
+
+    &__item::placeholder {
+      padding-left: 17px;
+      font-size: $font-size--h4;
+      letter-spacing: 0.025em;
+    }
+
+    &__input::placeholder {
+      font-size: $font-size--h4;
+      line-height: $font-size--h4 - 1;
+      letter-spacing: 0.02em;
+    }
+
     &__list {
       display: flex;
       flex-direction: row;
     }
 
     &--block {
+      position: relative;
       width: 668px;
       margin: 0px;
+      padding-bottom: 52px;
+    }
+
+    &__phone {
+      display: block;
+      position: absolute;
+      right: 25px;
+      bottom: 17px;
+      opacity: 0.2;
+
+      input:hover ~ & {
+        opacity: 1;
+        fill: $text-aqua;
+      }
+    }
+
+    &--desr {
+      width: 100%;
+      padding: 0px;
+      margin-bottom: 52px;
+    }
+
+    &__title--block {
+      padding: 0px;
+      padding-top: 17px;
+    }
+
+    &__mail {
+      display: block;
+      position: absolute;
+      right: 22px;
+      bottom: 7px;
+      opacity: 0.2;
+
+      input:hover ~ & {
+        opacity: 1;
+        fill: $text-aqua;
+      }
     }
 
     &__title {
@@ -106,16 +185,33 @@
       padding-left: 16px;
       padding-top: 4px;
       padding-bottom: 13px;
+      background-color: #f1f1f1;
     }
 
     &__list--textarea {
-      padding-top: 50px;
+      padding-top: 48px;
     }
 
     &__list--textarea .field-text__input {
-      min-height: 142px;
+      min-height: 123px;
       border: 2px solid $color-black;
+      padding: 0px;
       padding-top: 15px;
+      padding-left: 15px;
+      font-size: $font-size--h4;
+      line-height: $font-size--h4 - 1;
+      background-color: #ffffff;
+
+      &:hover {
+        border: 2px solid $text-aqua;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 1;
+        border: 2px solid $text-aqua;
+        outline: none
+      }
     }
   }
 }
@@ -124,6 +220,7 @@
 
   .field-text {
     width: 700px;
+    margin-bottom: 52;
 
     &__title {
       width: 175px;
@@ -132,6 +229,24 @@
 
     &--block {
       width: 875px;
+      margin-bottom: 0px;
+      padding-top: 68px;
+    }
+
+    &__list--textarea {
+      width: 875px;
+    }
+
+    &--desr {
+      margin-bottom: 50px;
+    }
+
+    &__phone {
+      right: 6px;
+    }
+
+    &__mail--item {
+      right: 2px;
     }
   }
 }
